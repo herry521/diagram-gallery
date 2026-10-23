@@ -309,7 +309,7 @@ input[type=checkbox] { accent-color: var(--blue); }
 <div><label class="filter-label" for="layout">空间骨架</label><select id="layout"></select></div>
 <div><label class="filter-label" for="context">应用领域</label><select id="context"></select></div>
 <div><label class="filter-label" for="role">材料角色</label><select id="role"><option value="diagrams">图例与画布 · 隐藏套装</option><option value="all">全部角色 · 含套装</option><option value="single">单一关系图</option><option value="composite">复合关系图</option><option value="worksheet">工作画布</option><option value="pack">套装与资源包</option></select></div>
-<div><label class="filter-label" for="access">本地文件</label><select id="access"><option value="all">全部格式</option><option value="editable">有可编辑文件</option><option value="ppt">有 PowerPoint 文件</option><option value="saved">有本地原文件</option><option value="reference">静态参考 / 无可编辑文件</option></select></div>
+<div><label class="filter-label" for="access">素材文件</label><select id="access"><option value="all">全部格式</option><option value="editable">有可编辑文件</option><option value="ppt">有 PowerPoint 文件</option><option value="saved">已收集原文件</option><option value="reference">静态参考 / 无可编辑文件</option></select></div>
 <div><label class="filter-label" for="batch">收录批次</label><select id="batch"></select></div>
 <div id="publicationFilter" hidden><label class="filter-label" for="visibility">公开浏览范围</label><select id="visibility"><option value="allowed">本站有原图的素材</option><option value="all">全部来源 · 含仅链接条目</option></select></div>
 <div class="sidegroup"><button class="secondary wide" id="reset">清空筛选 · 重新找图</button><button class="secondary wide" id="exportFav">导出我的收藏</button><p class="subnote">目的与骨架可交叉筛选。复合图有多个标签，分类计数不能相加当作素材总量。</p></div>

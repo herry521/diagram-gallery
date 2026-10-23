@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-10-23T05:06:17.354Z",
+  "status": "passed",
+  "before": {
+    "captured_at": "2026-10-23T05:03:59.526Z",
+    "public_commit": "6797c48",
+    "counts": {
+      "diagrams/all": {
+        "local": 286,
+        "public": 286
+      },
+      "diagrams/editable": {
+        "local": 134,
+        "public": 0
+      },
+      "diagrams/ppt": {
+        "local": 117,
+        "public": 0
+      },
+      "diagrams/saved": {
+        "local": 227,
+        "public": 57
+      },
+      "diagrams/reference": {
+        "local": 152,
+        "public": 286
+      },
+      "all/all": {
+        "local": 313,
+        "public": 313
+      },
+      "all/editable": {
+        "local": 159,
+        "public": 0
+      },
+      "all/ppt": {
+        "local": 142,
+        "public": 0
+      },
+      "all/saved": {
+        "local": 253,
+        "public": 57
+      },
+      "all/reference": {
+        "local": 154,
+        "public": 313
+      }
+    }
+  },
+  "after": {
+    "counts": {
+      "diagrams/all": {
+        "local": 286,
+        "public": 286
+      },
+      "diagrams/editable": {
+        "local": 134,
+        "public": 134
+      },
+      "diagrams/ppt": {
+        "local": 117,
+        "public": 117
+      },
+      "diagrams/saved": {
+        "local": 227,
+        "public": 227
+      },
+      "diagrams/reference": {
+        "local": 152,
+        "public": 152
+      },
+      "all/all": {
+        "local": 313,
+        "public": 313
+      },
+      "all/editable": {
+        "local": 159,
+        "public": 159
+      },
+      "all/ppt": {
+        "local": 142,
+        "public": 142
+      },
+      "all/saved": {
+        "local": 253,
+        "public": 253
+      },
+      "all/reference": {
+        "local": 154,
+        "public": 154
+      }
+    }
+  },
+  "materials": 313,
+  "metadata_checks": 1252,
+  "filter_sequence_cases": 6040,
+  "empty_intersections": 1746,
+  "case_groups": {
+    "role/access/mode/sort": 360,
+    "task/role/access/sort": 900,
+    "layout/role/access/sort": 2610,
+    "context/role/access/sort": 360,
+    "batch/role/access/sort": 360,
+    "task/layout/access": 1450
+  },
+  "editable_original_card_links": 159,
+  "private_editable_original_card_links": 159,
+  "scope": "Pure selection functions extracted from the two generated HTML bundles; exact ordered IDs compared. No local browser or DOM execution."
+}
