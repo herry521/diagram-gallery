@@ -2,7 +2,6 @@ const LIB=JSON.parse(document.getElementById('library-data').textContent),DATA=L
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names=Object.fromEntries(['tasks','layouts','contexts','roles'].map(k=>[k,Object.fromEntries(TAX[k].map(x=>[x.id,x.label]))]));
 DATA.forEach(d=>{d.task_labels??=d.tasks.map(k=>names.tasks[k]);d.layout_labels??=d.layouts.map(k=>names.layouts[k]);d.context_labels??=d.contexts.map(k=>names.contexts[k]);d.role_label??=names.roles[d.role];d.assets??=[];d.tags??=[];});
-if(LIB.public_site)DEFAULT_FILTERS.visibility='allowed';
 let filters={...DEFAULT_FILTERS},view='purpose',tourId='cdp',favorites=new Set(),selected=new Set(),visibleItems=[],detailItems=[],currentDetailId=null,lastFocus=null,toastTimer;
 try{const stored=JSON.parse(localStorage.getItem('composition-favorites-v1')||'[]');if(Array.isArray(stored))favorites=new Set(stored.filter(id=>byId[id]))}catch(e){}
 function toast(s){clearTimeout(toastTimer);$('#toast').textContent=s;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,2600)}
@@ -29,7 +28,7 @@ function loadDetail(d){
   })().catch(e=>{detailCache.delete(d.id);throw e}));return detailCache.get(d.id);
 }
 function imageHTML(d,cls='',full=false){
-  if(!d.preview)return '<div class="noimage">'+skeleton(d.layouts[0])+'<b>布局示意 · 原图未发布</b><br><span class="subnote">此条保留构图分析与来源入口</span></div>';
+  if(!d.preview)return '<div class="noimage"><b>此图的预览文件缺失</b><br><span class="subnote">请检查素材文件；可从详情中的来源链接查看原图。</span></div>';
   const w=d.preview_width||960,h=d.preview_height||600,small=d.thumbnail||d.preview,large=d.thumbnail_2x;
   const srcset=large&&large!==small?' data-srcset="'+esc(small+' '+(d.thumbnail_width||480)+'w, '+large+' '+(d.thumbnail_2x_width||960)+'w')+'"':'';
   return '<span class="image-frame"><img class="'+cls+'" src="'+(full?esc(d.preview):BLANK_IMAGE)+'" '+(full?'fetchpriority="high"':'data-src="'+esc(small)+'"'+srcset+' sizes="(max-width:760px) calc(100vw - 64px), (max-width:1200px) calc((100vw - 320px) / 2), 360px"')+' width="'+w+'" height="'+h+'" style="aspect-ratio:'+w+'/'+h+'" alt="'+esc(d.id+' '+d.title)+'" decoding="async" '+(full?'data-full-image':'data-thumbnail')+'><span class="image-hint">'+(full?'大图加载中':'缩略图加载中')+'</span></span>';
@@ -159,11 +158,11 @@ async function openDetail(d,sequence=visibleItems){
   try{const full=await loadDetail(d);if(token!==detailGeneration||!$('#modal').classList.contains('open'))return;renderDetail(full,sequence)}catch(e){if(token!==detailGeneration||!$('#modal').classList.contains('open'))return;$('#dialogContent').querySelector('.detail-loading')?.remove();$('#dialogContent').insertAdjacentHTML('beforeend','<div class="aside-note">'+esc(e.message)+' <button class="secondary" id="retryDetail">重试</button> '+link('静态总览.html#item-'+d.id,'查看静态详情')+'</div>');$('#retryDetail').onclick=()=>openDetail(d,sequence);toast('详情未加载，可重试或打开静态总览')}
 }
 function renderDetail(d,sequence=visibleItems){
-  detailItems=sequence.some(x=>x.id===d.id)?sequence:[d];const at=detailItems.findIndex(x=>x.id===d.id),alts=alternativesFor(d,LIB.public_site?DATA.filter(x=>x.publication?.status==='allowed'):DATA);
+  detailItems=sequence.some(x=>x.id===d.id)?sequence:[d];const at=detailItems.findIndex(x=>x.id===d.id),alts=alternativesFor(d,DATA);
   const more=d.more_previews.map(p=>link(p.href,p.label)).join('');
   let html='<div class="detail-nav"><button class="secondary" id="prevDetail" '+(at===0?'disabled':'')+'>← 上一张</button><span>'+(at+1)+' / '+detailItems.length+' · 左右方向键</span><button class="secondary" id="nextDetail" '+(at===detailItems.length-1?'disabled':'')+'>下一张 →</button></div><div class="cardmeta">'+d.id+' · '+esc(d.role_label)+' · '+esc(d.context_labels.join(' / '))+'</div><h2 id="dialogtitle">'+esc(d.title)+'</h2><div class="detail-top"><div>'+imageHTML(d,'large-img',true)+'<div class="detaillinks">'+(d.preview?link(d.preview,'打开原比例预览'):link(d.source_href,'到原始来源查看图像'))+more+'</div>'+tagsHTML(d)+'<div class="recipe-box"><b>主骨架怎样容纳局部结构</b>'+esc(d.recipe)+'</div><div class="detailsource">分类依据：'+esc(d.classification_note)+(d.confidence==='limited_preview'?'<br>只按已看到的套装样例归类，不推断未查看页面。':'')+'</div></div><div class="detailtext"><dl><dt>图中实际表达的关系</dt><dd>'+esc(d.relation)+'</dd><dt>可以借鉴的空间安排</dt><dd>'+esc(d.composition)+'</dd><dt>迁移时需要注意</dt><dd>'+esc(d.caveat)+'</dd><dt>适用场景</dt><dd>'+esc(Array.isArray(d.use_cases)?d.use_cases.join('；'):d.use_cases)+'</dd><dt>文件与访问</dt><dd>'+esc(d.format)+'<br>'+esc(d.access)+'</dd></dl><div class="detaillinks">'+d.assets.map(a=>link(a.href,a.label)).join('')+'</div>'+(d.archive_assets?.length?'<div class="detaillinks">'+d.archive_assets.map(a=>link(a.href,a.label)).join('')+'</div>':'')+'</div></div>';
   if(d.novelty)html+='<div class="recipe-box"><b>本轮为什么收录：与旧库的差别</b>'+esc(d.novelty.difference)+'</div>';
-  if(LIB.public_site&&d.publication)html+='<div class="aside-note">公开状态：'+esc(d.publication.status==='allowed'?'已按许可附原图与文件':'仅保留来源入口')+'。'+esc(d.publication.reason||'')+'</div>';
+  if(LIB.public_site&&d.publication)html+='<div class="aside-note">'+esc(d.publication.status==='allowed'?'随站保存真实预览及原许可允许的文件。':'随站保存真实预览，完整原文件请从私有备份访问。')+' 原作者的署名与使用条件见下方来源信息。</div>';
   if(alts.length)html+='<h3>也表达“'+esc(names.tasks[d.tasks[0]])+'”，换一种主骨架</h3><p class="subnote">依据关系标签推荐，优先同领域与精选项；这些图的业务含义并不等价。</p><div class="related-grid">'+alts.map(x=>'<button class="related-card" data-related="'+x.id+'">'+imageHTML(x)+'<strong>'+esc(x.id+' · '+x.title)+'</strong><small>'+esc(x.layout_labels.join(' + '))+'</small></button>').join('')+'</div>';
   html+='<div class="detailsource">来源：'+esc(d.source)+' · 核验日期 '+esc(d.checked_date)+'<br>'+esc(d.verification)+(d.recommended_pages?'<br>'+esc(d.recommended_pages):'')+'<br>许可与署名：'+esc(d.license_note)+'<br>证据记录：'+esc(d.evidence)+'<div class="detaillinks">'+link(d.source_href,d.page?'原 PDF · 第 '+d.page+' 页':'官方来源')+'</div></div>';
   openModal(html);currentDetailId=d.id;
@@ -212,15 +211,14 @@ $('#exportFav').onclick=async()=>{const chosen=DATA.filter(x=>favorites.has(x.id
 $('#stats').innerHTML=[[DATA.length,'项已重审素材'],[TAX.tasks.length,'类表达关系'],[TAX.layouts.length,'种空间骨架']].map(([n,t])=>'<div class="stat"><b>'+n+'</b><span>'+t+'</span></div>').join('');
 $('#reviewSummary').textContent='本次覆盖 '+TAX.reviewed_count+' 项；其中 '+TAX.limited_count+' 项按有限样例归类。另纠正 '+TAX.corrections.length+' 处已确认的原说明问题，具体记录可追溯。';
 $('#footnote').innerHTML='共 '+LIB.ppt_count+' 份 PowerPoint、'+LIB.visio_count+' 份 Visio；原文件的范围与许可见每项详情。公开预览不等于可编辑模板。<br>'+link('分类地图.html','完整分类地图')+link('静态总览.html','静态总览')+link('分类下载索引.html','本地文件索引')+link('使用说明.txt','使用说明')+link('素材目录.json','结构化目录');
-if(LIB.public_site)$('#publicationFilter').hidden=false;
 window.addEventListener('hashchange',applyHash);applyHash();$('#loadingNotice').hidden=true;
 
 const studied=DATA.filter(x=>x.role!=='pack');const under=TAX.tasks.map(t=>({label:t.label,n:studied.filter(x=>x.tasks[0]===t.id).length})).sort((a,b)=>a.n-b.n).slice(0,3);
 $('#reviewSummary').insertAdjacentHTML('beforeend','<p><b>覆盖仍有偏向：</b>体系支撑、层级和映射较多；按主关系统计，'+under.map(x=>esc(x.label)+' '+x.n+' 项').join('、')+'相对较少（不含套装）。有类别入口不等于该类已充分覆盖。本轮已补入时序片段、带极性的反馈、存量流量和多维数量编码；仍值得增加更多中文真实业务的完整案例。</p>');
 
 if(LIB.public_site){
-  $('#footnote').innerHTML='<p><b>公开学习版：</b>本站随站保存 '+LIB.published_item_count+' 项素材的原图及许可允许的文件；其余条目只列来源与构图分析。'+link('素材署名与许可.html','逐项署名和分发范围')+'</p><p>完整个人素材含 '+LIB.archive_ppt_count+' 份 PowerPoint、'+LIB.archive_visio_count+' 份 Visio，以及引用的图片与 PDF，均存放在 '+link(LIB.archive_repository,'私有素材仓库（登录 GitHub）')+'。克隆该仓库后打开 index.html 可离线浏览全部素材。</p>'+link('分类地图.html','完整分类地图')+link('静态总览.html','静态总览')+link('分类下载索引.html','随站文件索引')+link('使用说明.txt','使用说明')+link('素材目录.json','结构化目录');
-  document.querySelector('.intro').innerHTML='从表达关系与空间骨架学习构图。本站展示 '+LIB.published_item_count+' 组授权原图；完整 PPT、PDF 和图片可从 '+link(LIB.archive_repository,'私有素材仓库（登录 GitHub）')+' 获取。切换“全部来源”可检索全部 '+DATA.length+' 项。';
+  $('#footnote').innerHTML='<p><b>个人学习图库：</b>'+LIB.preview_item_count+' 项素材均保存真实预览，缩略图与大图来自同一份原图；来源、署名和原许可逐项保留。'+link('素材署名与许可.html','素材来源与使用条件')+'</p><p>完整个人素材含 '+LIB.archive_ppt_count+' 份 PowerPoint、'+LIB.archive_visio_count+' 份 Visio，以及引用的图片与 PDF，存放在 '+link(LIB.archive_repository,'私有素材仓库（登录 GitHub）')+'。克隆该仓库后打开 index.html 可离线浏览全部素材。</p>'+link('分类地图.html','完整分类地图')+link('静态总览.html','静态总览')+link('分类下载索引.html','随站文件索引')+link('使用说明.txt','使用说明')+link('素材目录.json','结构化目录');
+  document.querySelector('.intro').innerHTML='从表达关系与空间骨架学习构图。'+DATA.length+' 项素材均有真实图例预览，点开查看大图与构图拆解；完整 PPT、PDF 和原文件可从 '+link(LIB.archive_repository,'私有素材仓库（登录 GitHub）')+' 获取。';
   document.querySelector('label[for="access"]').textContent='随站文件';
   document.querySelector('#access option[value="saved"]').textContent='本站有原文件';
 }

@@ -1,0 +1,20 @@
+{
+  "expected_items": 313,
+  "checks": {
+    "offline_detail_records": 313,
+    "static_real_images": 313,
+    "local_items": 313,
+    "public_items": 313,
+    "matching_media_files": 939,
+    "hashed_detail_records": 313,
+    "external_source_links_preserved": 287,
+    "html_resource_references_checked": 313,
+    "svg_dependency_files_checked": 23,
+    "public_files_size_checked": 1383,
+    "learning_paths_equal": true,
+    "taxonomy_equal": true,
+    "item_order_equal": true
+  },
+  "errors": [],
+  "passed": true
+}
