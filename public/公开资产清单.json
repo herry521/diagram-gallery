@@ -1,0 +1,1509 @@
+[
+  {
+    "item_id": "K002",
+    "item_ids": [
+      "K002"
+    ],
+    "path": "assets/3656278f97be427c-K002.png",
+    "kind": "preview",
+    "bytes": 285554,
+    "sha256": "3656278f97be427ce87c5556c8084a3fa5c03e07688c71d2027ca544797271f2",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/media/greenfield-lakehouse-fabric/greenfield-lakehouse-fabric.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K002",
+    "item_ids": [
+      "K002"
+    ],
+    "path": "assets/419d3802bc89586b-K002-greenfield-lakehouse-fabric.svg",
+    "kind": "original",
+    "bytes": 451801,
+    "sha256": "419d3802bc89586b567eb120ed9b49fedb8d640a64fa51ebed3f7cc7a50ad7d6",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/media/greenfield-lakehouse-fabric/greenfield-lakehouse-fabric.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K030",
+    "item_ids": [
+      "K030"
+    ],
+    "path": "assets/a9762d2f05f44e2b-K030.png",
+    "kind": "preview",
+    "bytes": 284036,
+    "sha256": "a9762d2f05f44e2b725311a13ed893408acb2ae02a5753db39a724b59ac9c746",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-monitoring.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K030",
+    "item_ids": [
+      "K030"
+    ],
+    "path": "assets/ad455f9a34916b78-K030-baseline-monitoring.svg",
+    "kind": "original",
+    "bytes": 236816,
+    "sha256": "ad455f9a34916b7820247612c637fb36366733c46379cfcda669c46be0f0b3ae",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-monitoring.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "M001",
+    "item_ids": [
+      "M001"
+    ],
+    "path": "assets/42d641dbba637f04-M001.jpg",
+    "kind": "preview",
+    "bytes": 380094,
+    "sha256": "42d641dbba637f04ffe18db7bb643bd588fcc063907f7610740ba2a696848504",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M001",
+    "item_ids": [
+      "M001",
+      "M007",
+      "M009",
+      "M012",
+      "M014",
+      "M002",
+      "M003",
+      "M004",
+      "M005",
+      "M006",
+      "M008",
+      "M010",
+      "M011",
+      "M013"
+    ],
+    "path": "assets/e442dd76e74c6de5-Nesta-DIY-Toolkit-中文.pdf",
+    "kind": "original",
+    "bytes": 5296708,
+    "sha256": "e442dd76e74c6de53a74229b249156c10d232922acdbd9d27f1c1b8e0992bf3d",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M001",
+    "item_ids": [
+      "M001",
+      "M007",
+      "M009",
+      "M012",
+      "M014",
+      "M002",
+      "M003",
+      "M004",
+      "M005",
+      "M006",
+      "M008",
+      "M010",
+      "M011",
+      "M013"
+    ],
+    "path": "assets/a9d37ca428944d64-Nesta-DIY-Toolkit-English.pdf",
+    "kind": "original",
+    "bytes": 12760933,
+    "sha256": "a9d37ca428944d644e3fb43463b7f98073c836f3b8022584f923f39a2c844db6",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M007",
+    "item_ids": [
+      "M007"
+    ],
+    "path": "assets/c17e5630d1138c65-M007.jpg",
+    "kind": "preview",
+    "bytes": 156988,
+    "sha256": "c17e5630d1138c6507d595192cd3164740ca3cd83a625bf27c36ce97ad2cae01",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M009",
+    "item_ids": [
+      "M009"
+    ],
+    "path": "assets/1efc2f0fda343e72-M009.jpg",
+    "kind": "preview",
+    "bytes": 157541,
+    "sha256": "1efc2f0fda343e7282285c73c713bd50b5ccb2a6e5e710f132b6b2cd85ea9ea8",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M012",
+    "item_ids": [
+      "M012"
+    ],
+    "path": "assets/a6f7e7d8d8e362d6-M012.jpg",
+    "kind": "preview",
+    "bytes": 166464,
+    "sha256": "a6f7e7d8d8e362d6a5510b76676fb21df72ebb0221e10541b55c36f522af8e7f",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M014",
+    "item_ids": [
+      "M014"
+    ],
+    "path": "assets/90721cabb4a4abe1-M014.jpg",
+    "kind": "preview",
+    "bytes": 195081,
+    "sha256": "90721cabb4a4abe1127ce52389b652cc52643f41422ca8c8ff73fcab3fbb816d",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M015",
+    "item_ids": [
+      "M015"
+    ],
+    "path": "assets/30a27f08c814e4f1-M015.jpg",
+    "kind": "preview",
+    "bytes": 125705,
+    "sha256": "30a27f08c814e4f16210246c2cafd36c99fee2abc3c4871784bd16b2553831fe",
+    "source_url": "https://www.designcouncil.org.uk/resources/systemic-design-framework/",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "M015",
+    "item_ids": [
+      "M015"
+    ],
+    "path": "assets/35573104ca1f22ad-Design-Council-Systemic-Design-Framework.png",
+    "kind": "original",
+    "bytes": 51037,
+    "sha256": "35573104ca1f22ad222a7c115b4f63f8fde48b7b0c99a911d82303c9154d7f33",
+    "source_url": "https://www.designcouncil.org.uk/resources/systemic-design-framework/",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "M016",
+    "item_ids": [
+      "M016"
+    ],
+    "path": "assets/dee6a1c0e2ab74a5-M016.jpg",
+    "kind": "preview",
+    "bytes": 331863,
+    "sha256": "dee6a1c0e2ab74a56e13a0664a4bd7787e777a3b8e46530bd766b3f2a5a35a0e",
+    "source_url": "https://www.newknow.how/resources/systemic-design-practice-wheel",
+    "license": "CC BY-NC 4.0"
+  },
+  {
+    "item_id": "M016",
+    "item_ids": [
+      "M016"
+    ],
+    "path": "assets/304ca254f016299b-Systemic-Design-Practice-Wheel.png",
+    "kind": "original",
+    "bytes": 1424728,
+    "sha256": "304ca254f016299bd2eac65bcc2b53fa2775799b28c036105920721d01376cf6",
+    "source_url": "https://www.newknow.how/resources/systemic-design-practice-wheel",
+    "license": "CC BY-NC 4.0"
+  },
+  {
+    "item_id": "M016",
+    "item_ids": [
+      "M016"
+    ],
+    "path": "assets/ad1a7d5125e59797-Systemic-Design-Planning-Canvas.pdf",
+    "kind": "original",
+    "bytes": 193939,
+    "sha256": "ad1a7d5125e597977b016b3f57c8794153b4175903435e26f1dbb38f200bfb89",
+    "source_url": "https://www.newknow.how/resources/systemic-design-practice-wheel",
+    "license": "CC BY-NC 4.0"
+  },
+  {
+    "item_id": "M016",
+    "item_ids": [
+      "M016"
+    ],
+    "path": "assets/f1fd53e03c9b06c5-Systemic-Design-Planning-Canvas.jpg",
+    "kind": "additional_preview",
+    "bytes": 147131,
+    "sha256": "f1fd53e03c9b06c5d84689c10c2484c2ab8385d14e2d3e61e4b556458292a3fa",
+    "source_url": "https://www.newknow.how/resources/systemic-design-practice-wheel",
+    "license": "CC BY-NC 4.0"
+  },
+  {
+    "item_id": "A01",
+    "item_ids": [
+      "A01"
+    ],
+    "path": "assets/4aa8caec153f3954-A01.png",
+    "kind": "original",
+    "bytes": 80413,
+    "sha256": "4aa8caec153f39540ea6e88a2740f7e7fc293ea3d2b9a5fd4ea323e0a7243b62",
+    "source_url": "https://goalatlas.com/house-of-strategy/",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "T04",
+    "item_ids": [
+      "T04"
+    ],
+    "path": "assets/56ba3243f58eb63b-T04.png",
+    "kind": "preview",
+    "bytes": 485755,
+    "sha256": "56ba3243f58eb63b84e7a146520da8c0e49fff66f754e5a880dd15b6df772e68",
+    "source_url": "https://c4model.com/diagrams/container",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "T07",
+    "item_ids": [
+      "T07"
+    ],
+    "path": "assets/677290aaeae5d344-T07.png",
+    "kind": "preview",
+    "bytes": 111382,
+    "sha256": "677290aaeae5d34490ae18b03cab3a54bc84813b0df2ae80726323ba68406d1b",
+    "source_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "T08",
+    "item_ids": [
+      "T08"
+    ],
+    "path": "assets/22d73ad206b0773e-T08.png",
+    "kind": "preview",
+    "bytes": 174436,
+    "sha256": "22d73ad206b0773e6e603539b76946d6331a175a389606ab7fcfb698294d91a2",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "M002",
+    "item_ids": [
+      "M002"
+    ],
+    "path": "assets/65a3a10b5d9173c7-M002.jpg",
+    "kind": "preview",
+    "bytes": 112990,
+    "sha256": "65a3a10b5d9173c71d76d6342ea4c76e7fbbbc43b8b55089fabecca851fdcdaf",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M003",
+    "item_ids": [
+      "M003"
+    ],
+    "path": "assets/57d430cea57c243a-M003.jpg",
+    "kind": "preview",
+    "bytes": 172212,
+    "sha256": "57d430cea57c243ae07082542ca2f2cc567db12a319e3170b1c2eb9e28623dbb",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M004",
+    "item_ids": [
+      "M004"
+    ],
+    "path": "assets/19ce85a37c7fdc12-M004.jpg",
+    "kind": "preview",
+    "bytes": 174093,
+    "sha256": "19ce85a37c7fdc1209dc938e2e34a1245dd13bba54ba07486f881a7d8a80d23e",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M005",
+    "item_ids": [
+      "M005"
+    ],
+    "path": "assets/a8ad807cd9011001-M005.jpg",
+    "kind": "preview",
+    "bytes": 112696,
+    "sha256": "a8ad807cd9011001e182eff9f7b26a894f54d54af7889f5de6e57ada4655c59f",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M006",
+    "item_ids": [
+      "M006"
+    ],
+    "path": "assets/f1aafc88c2315fbe-M006.jpg",
+    "kind": "preview",
+    "bytes": 120866,
+    "sha256": "f1aafc88c2315fbe7290fe58d315c0c508262d2bda394aadf59e8b0381242e7e",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M008",
+    "item_ids": [
+      "M008"
+    ],
+    "path": "assets/f98789f558b2f8ce-M008.jpg",
+    "kind": "preview",
+    "bytes": 149481,
+    "sha256": "f98789f558b2f8ce939e22529f17b00b4076457f55421d1cf2812d6c172d474a",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M010",
+    "item_ids": [
+      "M010"
+    ],
+    "path": "assets/4e9cff69f9891f85-M010.jpg",
+    "kind": "preview",
+    "bytes": 122880,
+    "sha256": "4e9cff69f9891f85f3681dce4c7d1671ea59d5bcd0dc4bdcbf42a06576954df5",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M011",
+    "item_ids": [
+      "M011"
+    ],
+    "path": "assets/fcc9cc6e6622f95b-M011.jpg",
+    "kind": "preview",
+    "bytes": 122181,
+    "sha256": "fcc9cc6e6622f95be4e659439fd1d365e08a4cdf5fcaccb8c508e4b378d07977",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "M017",
+    "item_ids": [
+      "M017"
+    ],
+    "path": "assets/7823d47c3f2d9214-M017.jpg",
+    "kind": "preview",
+    "bytes": 85709,
+    "sha256": "7823d47c3f2d921454cd7d1ad6823c8284a1f309ae98c405c77190aa76373f93",
+    "source_url": "https://servicedesigntools.org/tools/service-blueprint",
+    "license": "CC BY-NC-ND 2.5"
+  },
+  {
+    "item_id": "M017",
+    "item_ids": [
+      "M017"
+    ],
+    "path": "assets/2f14eb37e5493277-Service-Blueprint-Template.pdf",
+    "kind": "original",
+    "bytes": 407573,
+    "sha256": "2f14eb37e5493277129f4eeb6add907c216054dba6f563093590eec0f7f856aa",
+    "source_url": "https://servicedesigntools.org/tools/service-blueprint",
+    "license": "CC BY-NC-ND 2.5"
+  },
+  {
+    "item_id": "M013",
+    "item_ids": [
+      "M013"
+    ],
+    "path": "assets/c437fe9f7ea47ca8-M013.jpg",
+    "kind": "preview",
+    "bytes": 163981,
+    "sha256": "c437fe9f7ea47ca808471c786efa26efb9022baec7eca79eb0c17ca4061dcd6c",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "N001",
+    "item_ids": [
+      "N001"
+    ],
+    "path": "assets/9703e161b07b24f6-N001.png",
+    "kind": "preview",
+    "bytes": 561807,
+    "sha256": "9703e161b07b24f6c9ffa56a19170e38f35f5e24d56436c0abb79ec76a033466",
+    "source_url": "https://www.cdc.gov/pcd/issues/2021/pdf/21_0175.pdf",
+    "license": "PCD Open Access Statement（允许复制和分发）"
+  },
+  {
+    "item_id": "N001",
+    "item_ids": [
+      "N001"
+    ],
+    "path": "assets/fc412fd1c7d6eedc-CDC-系统动力学模型-原始14页.pdf",
+    "kind": "original",
+    "bytes": 798426,
+    "sha256": "fc412fd1c7d6eedcbf8ebeabb1d1c359af285b054732efa35979e3ddecbb8867",
+    "source_url": "https://www.cdc.gov/pcd/issues/2021/pdf/21_0175.pdf",
+    "license": "PCD Open Access Statement（允许复制和分发）"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/c457a1bcde2cfdbd-N006.png",
+    "kind": "preview",
+    "bytes": 166648,
+    "sha256": "c457a1bcde2cfdbd020cd26b0ad1bdf02f45136cec48a5762f30166b4b9bad5d",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/bathtub_summary.016517d8c9.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/aa5a6630bc9cac1f-bathtub_summary.016517d8c9.jpg",
+    "kind": "original",
+    "bytes": 45851,
+    "sha256": "aa5a6630bc9cac1f738ee70952d48e12ea0f96d3ac3438f6b1ce90f09d942eb6",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/bathtub_summary.016517d8c9.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/498e7d22aafe8feb-bathtub_dynamics_1.e4c22851d6.jpg",
+    "kind": "original",
+    "bytes": 164013,
+    "sha256": "498e7d22aafe8feb038194ae60df7f7b90e9c4badd8049b0f82be24dafeeae94",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/bathtub_summary.016517d8c9.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/37e1b8ff340d2b92-bathtub_dynamics_2.b9bc593f7b.jpg",
+    "kind": "original",
+    "bytes": 152780,
+    "sha256": "37e1b8ff340d2b92c3b4da0b39172a58321529a4be76da9e08146140bb07173f",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/bathtub_summary.016517d8c9.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/f6a3dd0f46683603-slow_capital_stock_turnover.96736e5842.jpg",
+    "kind": "original",
+    "bytes": 148669,
+    "sha256": "f6a3dd0f466836033564b75252e0824bbb8393d9a6d5d40f744f0b4453eff1c1",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/slow_capital_stock_turnover.96736e5842.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/6d203396c351cd84-capital_stock_turnover.66d5e8ebef.jpg",
+    "kind": "original",
+    "bytes": 217317,
+    "sha256": "6d203396c351cd843f4eba383b37cf0227e61786b0a743a26a6e2c68de850eb3",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/slow_capital_stock_turnover.96736e5842.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/07a6c586aef6915d-N006-alt1.png",
+    "kind": "additional_preview",
+    "bytes": 318556,
+    "sha256": "07a6c586aef6915d2cdd19397aeba4cb0ea3b546ed7ae8c9bd3897e0c182f6bf",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/bathtub_summary.016517d8c9.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/1f2d64ab43076e65-N006-alt2.png",
+    "kind": "additional_preview",
+    "bytes": 284729,
+    "sha256": "1f2d64ab43076e65c3ae22adc01cf9c5ed6ee8e1e89459612eeded8412934bf3",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/bathtub_summary.016517d8c9.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/9a9c591bd26b4fb8-N007.png",
+    "kind": "additional_preview",
+    "bytes": 506251,
+    "sha256": "9a9c591bd26b4fb87466edcff70496b31e56f25d970c2511b6c3820aa49d18ab",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/slow_capital_stock_turnover.96736e5842.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "N006",
+    "item_ids": [
+      "N006"
+    ],
+    "path": "assets/3fbf5feb3601f71b-N007-alt1.png",
+    "kind": "additional_preview",
+    "bytes": 458604,
+    "sha256": "3fbf5feb3601f71bfb1b4ba27b8ec636a6bf9a71e37af70d4c1fedfcf9d59c5e",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/images/background/slow_capital_stock_turnover.96736e5842.jpg",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  {
+    "item_id": "V001",
+    "item_ids": [
+      "V001"
+    ],
+    "path": "assets/e8617407851a96c9-V001.png",
+    "kind": "preview",
+    "bytes": 429268,
+    "sha256": "e8617407851a96c9e2769c5b0dd6aa397dfe8842fce7f1d4cda38d173f0483f8",
+    "source_url": "https://www.data-to-viz.com/graph/chord_files/figure-html/unnamed-chunk-1-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V001",
+    "item_ids": [
+      "V001"
+    ],
+    "path": "assets/951b16e59ed462ad-V001-chord.png",
+    "kind": "original",
+    "bytes": 517730,
+    "sha256": "951b16e59ed462adfcf76ce8b1238ee13c1dbe6d975da99ccc056fbd371aed62",
+    "source_url": "https://www.data-to-viz.com/graph/chord_files/figure-html/unnamed-chunk-1-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V001",
+    "item_ids": [
+      "V001",
+      "V002",
+      "V003",
+      "V005",
+      "V006",
+      "V010"
+    ],
+    "path": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt",
+    "kind": "license",
+    "bytes": 1066,
+    "sha256": "9444c65a77928a32d8e62cb825a30c699a60d96b69c7e7a4a183398c0adf669b",
+    "source_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V002",
+    "item_ids": [
+      "V002"
+    ],
+    "path": "assets/27173eb09ce9e764-V002.png",
+    "kind": "preview",
+    "bytes": 225933,
+    "sha256": "27173eb09ce9e76449da1f612258e20387e2ebf041e8f7a5357f379f43295da2",
+    "source_url": "https://www.data-to-viz.com/graph/parallel_files/figure-html/unnamed-chunk-5-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V002",
+    "item_ids": [
+      "V002"
+    ],
+    "path": "assets/ed1f9b48a6943cd2-V002-parallel.png",
+    "kind": "original",
+    "bytes": 285889,
+    "sha256": "ed1f9b48a6943cd21870fd71d5cd0c713ebc45895941c7a58a3526f2179f3702",
+    "source_url": "https://www.data-to-viz.com/graph/parallel_files/figure-html/unnamed-chunk-5-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V003",
+    "item_ids": [
+      "V003"
+    ],
+    "path": "assets/834436e277fa7bd5-V003.png",
+    "kind": "preview",
+    "bytes": 132139,
+    "sha256": "834436e277fa7bd5f4c8ca54dd879f704e0114165ea5913dfe539c39f3d8594c",
+    "source_url": "https://www.data-to-viz.com/graph/ridgeline_files/figure-html/unnamed-chunk-3-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V003",
+    "item_ids": [
+      "V003"
+    ],
+    "path": "assets/e0b973529248486a-V003-ridgeline.png",
+    "kind": "original",
+    "bytes": 168851,
+    "sha256": "e0b973529248486a5531406a1a832db7b269a47ec19a944102ea4e639eefe0e8",
+    "source_url": "https://www.data-to-viz.com/graph/ridgeline_files/figure-html/unnamed-chunk-3-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V005",
+    "item_ids": [
+      "V005"
+    ],
+    "path": "assets/26a5e64f512894d5-V005.png",
+    "kind": "preview",
+    "bytes": 188186,
+    "sha256": "26a5e64f512894d50c37f6229d185dfc794d44809bd53dba234c32ac71ec18d9",
+    "source_url": "https://www.data-to-viz.com/graph/density2d_files/figure-html/unnamed-chunk-2-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V005",
+    "item_ids": [
+      "V005"
+    ],
+    "path": "assets/cdc3ac83f44d24c1-V005-density2d.png",
+    "kind": "original",
+    "bytes": 467343,
+    "sha256": "cdc3ac83f44d24c16eefdeaf14adf13b63f24afd6f91508521b5f55f8321c0c1",
+    "source_url": "https://www.data-to-viz.com/graph/density2d_files/figure-html/unnamed-chunk-2-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V005",
+    "item_ids": [
+      "V005"
+    ],
+    "path": "assets/1dc8b0055b085381-V004-hexbinmap.png",
+    "kind": "original",
+    "bytes": 199539,
+    "sha256": "1dc8b0055b0853814ebb8f2c81fbf82b7c327a24b0ed6550d91ccdabdf285245",
+    "source_url": "https://www.data-to-viz.com/graph/hexbinmap_files/figure-html/unnamed-chunk-2-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V005",
+    "item_ids": [
+      "V005"
+    ],
+    "path": "assets/0fb3ae142b41fd36-V004.png",
+    "kind": "additional_preview",
+    "bytes": 147229,
+    "sha256": "0fb3ae142b41fd368b5f08e3c6d6c3914dd6ad0c116da0b6bce837ba041e4399",
+    "source_url": "https://www.data-to-viz.com/graph/hexbinmap_files/figure-html/unnamed-chunk-2-1.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V006",
+    "item_ids": [
+      "V006"
+    ],
+    "path": "assets/73d2204e287aee65-V006.png",
+    "kind": "preview",
+    "bytes": 414972,
+    "sha256": "73d2204e287aee6544e5cf3ab35b1d7c63d62bf53ae3ad9232d157a26113638a",
+    "source_url": "https://www.data-to-viz.com/graph/correlogram_files/figure-html/unnamed-chunk-4-5.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V006",
+    "item_ids": [
+      "V006"
+    ],
+    "path": "assets/ca63aa41d8df73e9-V006-correlogram.png",
+    "kind": "original",
+    "bytes": 429541,
+    "sha256": "ca63aa41d8df73e91022ab680d7d77d6a8760e7d49ba69d6ff395697350af570",
+    "source_url": "https://www.data-to-viz.com/graph/correlogram_files/figure-html/unnamed-chunk-4-5.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V007",
+    "item_ids": [
+      "V007"
+    ],
+    "path": "assets/3e09a8ae194592ed-V007.png",
+    "kind": "preview",
+    "bytes": 119923,
+    "sha256": "3e09a8ae194592edcd13275e9337ae205d9b3d23f42408357ec835bf6a854f0c",
+    "source_url": "https://upset.app/assets/images/upsetr.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "V007",
+    "item_ids": [
+      "V007"
+    ],
+    "path": "assets/32fdaa5cb00739e2-V007-upset.png",
+    "kind": "original",
+    "bytes": 163268,
+    "sha256": "32fdaa5cb00739e2f5d4ca7e2fcd517ef3e5b9d3c7e5e3a47661f2e4e91a9943",
+    "source_url": "https://upset.app/assets/images/upsetr.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "V007",
+    "item_ids": [
+      "V007"
+    ],
+    "path": "assets/0edb2a6b83f9e862-V007-UpSet-官方横向解释图.svg",
+    "kind": "original",
+    "bytes": 10271,
+    "sha256": "0edb2a6b83f9e86244526e79590418cfa21be4c8ac76f87f060553b1c5bcf673",
+    "source_url": "https://upset.app/assets/images/upsetr.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "V010",
+    "item_ids": [
+      "V010"
+    ],
+    "path": "assets/e162ed3ad9519416-V010.png",
+    "kind": "preview",
+    "bytes": 57919,
+    "sha256": "e162ed3ad9519416268a95764144efe655b2baec967079a0169054555b7f2331",
+    "source_url": "https://www.data-to-viz.com/graph/IMG/cartogram2.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V010",
+    "item_ids": [
+      "V010"
+    ],
+    "path": "assets/e4bd50b189b848c8-V010-cartogram.png",
+    "kind": "original",
+    "bytes": 74362,
+    "sha256": "e4bd50b189b848c8eeee9c42febf37705097f6c5f80eb961f740527cf9df5546",
+    "source_url": "https://www.data-to-viz.com/graph/IMG/cartogram2.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V010",
+    "item_ids": [
+      "V010"
+    ],
+    "path": "assets/007a3436becfd756-V010-原始地理边界对照.png",
+    "kind": "original",
+    "bytes": 69881,
+    "sha256": "007a3436becfd756776ca58ad4649bcb2f63b62b5a5d7a5f95c0b095bf1b478c",
+    "source_url": "https://www.data-to-viz.com/graph/IMG/cartogram2.png",
+    "license": "MIT"
+  },
+  {
+    "item_id": "V011",
+    "item_ids": [
+      "V011"
+    ],
+    "path": "assets/0661a226cee23b4a-V011.png",
+    "kind": "preview",
+    "bytes": 313399,
+    "sha256": "0661a226cee23b4a9d7beaa1060bdb3de190fa607b046abb3a15ce6740fbc54d",
+    "source_url": "https://flowcharts.llnl.gov/sites/flowcharts/files/2026-08/energy-2024-united-states.pdf",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "V011",
+    "item_ids": [
+      "V011"
+    ],
+    "path": "assets/31a221b8f55483d1-V011-llnl-energy-sankey.pdf",
+    "kind": "original",
+    "bytes": 316006,
+    "sha256": "31a221b8f55483d1f67823efadce1968af9e0f3ea8723e508c4a0551b15f16c7",
+    "source_url": "https://flowcharts.llnl.gov/sites/flowcharts/files/2026-08/energy-2024-united-states.pdf",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  {
+    "item_id": "K001",
+    "item_ids": [
+      "K001"
+    ],
+    "path": "assets/c36ccd5a01019b8d-K001.png",
+    "kind": "preview",
+    "bytes": 59623,
+    "sha256": "c36ccd5a01019b8d17bfb684f97ffaa30c13126d43b61c6dc2cedbc6646cd085",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/_images/modern-data-warehouse-microsoft-fabric.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K001",
+    "item_ids": [
+      "K001"
+    ],
+    "path": "assets/45eaa18b5eabac8b-K001-modern-data-warehouse-microsoft-fabric.png",
+    "kind": "original",
+    "bytes": 74968,
+    "sha256": "45eaa18b5eabac8b5fe2931971e9e8dec9eb919b9aaad950b3d87532578d6d10",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/_images/modern-data-warehouse-microsoft-fabric.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K003",
+    "item_ids": [
+      "K003"
+    ],
+    "path": "assets/873e28466ad39566-K003.png",
+    "kind": "preview",
+    "bytes": 16933,
+    "sha256": "873e28466ad39566d98f8d2f92c0a116f96350d71482a942a15d587539c30d81",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K003",
+    "item_ids": [
+      "K003"
+    ],
+    "path": "assets/3075f11157b494de-K003-command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "kind": "original",
+    "bytes": 10323,
+    "sha256": "3075f11157b494deae90e5147f54303ae3f6c49a9ef964064e9bea1cc18ccac2",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K003",
+    "item_ids": [
+      "K003"
+    ],
+    "path": "assets/0df4cc631ddba61b-K003-alt1-command-and-query-responsibility-segregation-cqrs-tradition-crud.png",
+    "kind": "original",
+    "bytes": 4842,
+    "sha256": "0df4cc631ddba61b3c7d3494edfa892e2d91ea5cacba4c4a96a05f651d5a05a1",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K003",
+    "item_ids": [
+      "K003"
+    ],
+    "path": "assets/eff566b621f5a4fa-K003-alt2-command-and-query-responsibility-segregation-cqrs-basic.png",
+    "kind": "original",
+    "bytes": 9651,
+    "sha256": "eff566b621f5a4fab8fb718c21d1c7f57f3ead89e6d016576ee7a5984450aa14",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K003",
+    "item_ids": [
+      "K003"
+    ],
+    "path": "assets/db16ceefacad86dc-K003-alt1.png",
+    "kind": "additional_preview",
+    "bytes": 8262,
+    "sha256": "db16ceefacad86dc88661df76cfc6177143505a6f2063ffeb3d7c3d4e52f3fbc",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K003",
+    "item_ids": [
+      "K003"
+    ],
+    "path": "assets/57f946d94efdb879-K003-alt2.png",
+    "kind": "additional_preview",
+    "bytes": 16192,
+    "sha256": "57f946d94efdb8791f8e595a6b9e303bcab7b8df8ec360e8920159ccac0187b6",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K004",
+    "item_ids": [
+      "K004"
+    ],
+    "path": "assets/6cec987f0d5efb25-K004.png",
+    "kind": "preview",
+    "bytes": 181409,
+    "sha256": "6cec987f0d5efb25258673126d927fcf0d8b0e4c2f235630fdc8bbd94e33449b",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/event-sourcing-overview.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K004",
+    "item_ids": [
+      "K004"
+    ],
+    "path": "assets/656f20a8fbafb520-K004-event-sourcing-overview.svg",
+    "kind": "original",
+    "bytes": 56793,
+    "sha256": "656f20a8fbafb5204da5eb5bb3c25e08cf59ccbea03fe56bd1e18b73ab15e75a",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/event-sourcing-overview.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K005",
+    "item_ids": [
+      "K005"
+    ],
+    "path": "assets/f4a14a809fa8d432-K005.png",
+    "kind": "preview",
+    "bytes": 47426,
+    "sha256": "f4a14a809fa8d4323fdf84915ee1aad76281f7931b030ef9fc9a99ce7c83c87e",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/choreography-pattern.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K005",
+    "item_ids": [
+      "K005"
+    ],
+    "path": "assets/6a3e73bd7c1e9e79-K005-choreography-pattern.png",
+    "kind": "original",
+    "bytes": 55996,
+    "sha256": "6a3e73bd7c1e9e7930715b45b9863e11e3bbbe76a12c9cd4cdae004516301e3a",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/choreography-pattern.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K005",
+    "item_ids": [
+      "K005"
+    ],
+    "path": "assets/95d6e3aec63c7fa8-K005-alt1-orchestrator.png",
+    "kind": "original",
+    "bytes": 51701,
+    "sha256": "95d6e3aec63c7fa89ac0cabc003e475bf945147b15c67df9013c9d4fa12af8b5",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/choreography-pattern.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K005",
+    "item_ids": [
+      "K005"
+    ],
+    "path": "assets/626677f5eb040889-K005-alt1.png",
+    "kind": "additional_preview",
+    "bytes": 43789,
+    "sha256": "626677f5eb040889719c192ea457f1328a5e8ffea0f411f1f25089af687bb48a",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/choreography-pattern.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K006",
+    "item_ids": [
+      "K006"
+    ],
+    "path": "assets/35b539c921c68bc0-K006.png",
+    "kind": "preview",
+    "bytes": 96230,
+    "sha256": "35b539c921c68bc0f98c855c609a61b87b7ab962dfb3a847d51a837064ebb200",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/data/images/stream-processing-asa/stream-processing-stream-analytics.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K006",
+    "item_ids": [
+      "K006"
+    ],
+    "path": "assets/1c9fe9abf66fe900-K006-stream-processing-stream-analytics.svg",
+    "kind": "original",
+    "bytes": 110588,
+    "sha256": "1c9fe9abf66fe900bac5febf9f4f58c6098588cf0138ad972ac5867267825ddb",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/data/images/stream-processing-asa/stream-processing-stream-analytics.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K007",
+    "item_ids": [
+      "K007"
+    ],
+    "path": "assets/dca9d1abed5a887a-K007.png",
+    "kind": "preview",
+    "bytes": 211618,
+    "sha256": "dca9d1abed5a887a558355fba77f13047c4b56a43816b6bc4424a964890a2da0",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/integration/media/enterprise-integration-message-broker-events.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K007",
+    "item_ids": [
+      "K007"
+    ],
+    "path": "assets/5dcd17321576f601-K007-enterprise-integration-message-broker-events.svg",
+    "kind": "original",
+    "bytes": 174925,
+    "sha256": "5dcd17321576f601a3f00c840b7da6abf1ac5fdf1f0bfaf29b55ca30a43f93dc",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/integration/media/enterprise-integration-message-broker-events.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K008",
+    "item_ids": [
+      "K008"
+    ],
+    "path": "assets/a18b4ba961debaa4-K008.png",
+    "kind": "preview",
+    "bytes": 172689,
+    "sha256": "a18b4ba961debaa44f32994649d34d362c4d79967ce37c10eff9e54bea7468f0",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/images/simple-enterprise-integration.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K008",
+    "item_ids": [
+      "K008"
+    ],
+    "path": "assets/deba6f5760e89897-K008-simple-enterprise-integration.svg",
+    "kind": "original",
+    "bytes": 105171,
+    "sha256": "deba6f5760e89897dc325a9c60a7068124e640c7e570cbd02018d108b58089b3",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/images/simple-enterprise-integration.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K009",
+    "item_ids": [
+      "K009"
+    ],
+    "path": "assets/d670122fe7f09688-K009.png",
+    "kind": "preview",
+    "bytes": 217448,
+    "sha256": "d670122fe7f09688fecda2cff5a851fafe3fcff139e5dee720f14183d866f79f",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/hybrid/images/azure-files-private.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K009",
+    "item_ids": [
+      "K009"
+    ],
+    "path": "assets/bcb6d442dbf41ec7-K009-azure-files-private.svg",
+    "kind": "original",
+    "bytes": 151648,
+    "sha256": "bcb6d442dbf41ec7289eecea1335ec2f2b5fa6985432b581c9bb1fa2de665a2c",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/hybrid/images/azure-files-private.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K010",
+    "item_ids": [
+      "K010"
+    ],
+    "path": "assets/25f6cde331477b2e-K010.png",
+    "kind": "preview",
+    "bytes": 272701,
+    "sha256": "25f6cde331477b2e96a0d08a47b43ca089b3d72a372a3b4bbbff94fd1ca47d30",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/infrastructure/media/architecture-disaster-recovery-multi-tier-app.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K010",
+    "item_ids": [
+      "K010"
+    ],
+    "path": "assets/903e96cbf268b69d-K010-architecture-disaster-recovery-multi-tier-app.svg",
+    "kind": "original",
+    "bytes": 270912,
+    "sha256": "903e96cbf268b69d0ff6a63e6824da70962b9970db4ac90fdfedfaf68e8114ef",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/infrastructure/media/architecture-disaster-recovery-multi-tier-app.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K011",
+    "item_ids": [
+      "K011"
+    ],
+    "path": "assets/31e0480c8a4cff56-K011.png",
+    "kind": "preview",
+    "bytes": 472166,
+    "sha256": "31e0480c8a4cff569c601864b887565877cba1e62b3b05e1e1fd96524c9c3e3d",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/images/azure-virtual-desktop-bcdr-pooled-host-pool.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K011",
+    "item_ids": [
+      "K011"
+    ],
+    "path": "assets/de23c16a1bc36919-K011-azure-virtual-desktop-bcdr-pooled-host-pool.svg",
+    "kind": "original",
+    "bytes": 491758,
+    "sha256": "de23c16a1bc36919fcbad089901e49295bfc5e77ea9373b695e3191fee8951f6",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/images/azure-virtual-desktop-bcdr-pooled-host-pool.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K012",
+    "item_ids": [
+      "K012"
+    ],
+    "path": "assets/035d70a3cae1f2bf-K012.png",
+    "kind": "preview",
+    "bytes": 170723,
+    "sha256": "035d70a3cae1f2bfe26afa6b417f1d69d33581aa0e6d79bb58fa13f098630e13",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/images/fabric-deployment-pattern.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K012",
+    "item_ids": [
+      "K012"
+    ],
+    "path": "assets/2e6722fa033b47e1-K012-fabric-deployment-pattern.svg",
+    "kind": "original",
+    "bytes": 507247,
+    "sha256": "2e6722fa033b47e18f66ee6ec32abc198f4ed29f70f473164b697f57b467f333",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/images/fabric-deployment-pattern.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K013",
+    "item_ids": [
+      "K013"
+    ],
+    "path": "assets/85cc10ac69c3ebcd-K013.png",
+    "kind": "preview",
+    "bytes": 298383,
+    "sha256": "85cc10ac69c3ebcd914c1ed232acac49a640e1806854a1c82e8737d3e281b8d3",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K013",
+    "item_ids": [
+      "K013"
+    ],
+    "path": "assets/97b5703e2727bf0a-K013-baseline-architecture.svg",
+    "kind": "original",
+    "bytes": 272980,
+    "sha256": "97b5703e2727bf0a58be35f975baf88493e3042b46d1b44a34de70d1bb2f403f",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K014",
+    "item_ids": [
+      "K014"
+    ],
+    "path": "assets/4506dbaa5fac2533-K014.png",
+    "kind": "preview",
+    "bytes": 290382,
+    "sha256": "4506dbaa5fac2533eb1e4d6402672fa8425285de383ba6fde4ef8893b7f230ec",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/_images/hub-spoke-network-topology-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K014",
+    "item_ids": [
+      "K014"
+    ],
+    "path": "assets/7e4e83532fcd2657-K014-hub-spoke-network-topology-architecture.svg",
+    "kind": "original",
+    "bytes": 201958,
+    "sha256": "7e4e83532fcd2657ede7df8971f53737224be7bb8828e821065b122c42ed7248",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/_images/hub-spoke-network-topology-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K015",
+    "item_ids": [
+      "K015"
+    ],
+    "path": "assets/2b459c114d1f6bc2-K015.png",
+    "kind": "preview",
+    "bytes": 322586,
+    "sha256": "2b459c114d1f6bc219c20786e0b946861f968e8d58925cfe04733e3a5ea6fdb0",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/images/aks-baseline-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K015",
+    "item_ids": [
+      "K015"
+    ],
+    "path": "assets/829bf39462b0d11f-K015-aks-baseline-architecture.svg",
+    "kind": "original",
+    "bytes": 187182,
+    "sha256": "829bf39462b0d11f729437b999129d1b7e32253d4e9886d1dfbb30125cd3545a",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/images/aks-baseline-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K016",
+    "item_ids": [
+      "K016"
+    ],
+    "path": "assets/b6103d1949899a87-K016.png",
+    "kind": "preview",
+    "bytes": 239814,
+    "sha256": "b6103d1949899a878a82b2f2dccab1c2c711481a8d7f927b7492b477b8428b62",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/images/microservices-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K016",
+    "item_ids": [
+      "K016"
+    ],
+    "path": "assets/b102c8bfd0892cf6-K016-microservices-architecture.svg",
+    "kind": "original",
+    "bytes": 263281,
+    "sha256": "b102c8bfd0892cf643b08d3b220b101e272ebfca96db39c789784df70fad82fc",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/images/microservices-architecture.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K017",
+    "item_ids": [
+      "K017"
+    ],
+    "path": "assets/caf4332fc247de90-K017.png",
+    "kind": "preview",
+    "bytes": 108016,
+    "sha256": "caf4332fc247de900a283537872ccde3eb2e760cca4f58f2dd4c69f208995ac2",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/claim-check-diagram.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K017",
+    "item_ids": [
+      "K017"
+    ],
+    "path": "assets/58812316d8394f43-K017-claim-check-diagram.svg",
+    "kind": "original",
+    "bytes": 18176,
+    "sha256": "58812316d8394f431598a74985c07d349b63c5c62873ab38512a06fa84b19473",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/claim-check-diagram.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K018",
+    "item_ids": [
+      "K018"
+    ],
+    "path": "assets/4fd55c968e86a3fa-K018.png",
+    "kind": "preview",
+    "bytes": 23661,
+    "sha256": "4fd55c968e86a3fa75429b5024bb6230bf711faaae7f6d74859c4ec71a4a5948",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/circuit-breaker-diagram.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K018",
+    "item_ids": [
+      "K018"
+    ],
+    "path": "assets/5cd1956ca9527a5c-K018-circuit-breaker-diagram.png",
+    "kind": "original",
+    "bytes": 14209,
+    "sha256": "5cd1956ca9527a5c9bb2310e91fc4fae33edf00c25a572de61f99030118b8423",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/circuit-breaker-diagram.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K018",
+    "item_ids": [
+      "K018"
+    ],
+    "path": "assets/cba54d683b8d765f-K018-alt1-circuit-breaker-pattern.svg",
+    "kind": "original",
+    "bytes": 113984,
+    "sha256": "cba54d683b8d765f3fcbe99bfbb1c089c256b99658a91bd2b646ad84f31c12db",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/circuit-breaker-diagram.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K018",
+    "item_ids": [
+      "K018"
+    ],
+    "path": "assets/5bf290c2227ae20b-K018-alt1.png",
+    "kind": "additional_preview",
+    "bytes": 114358,
+    "sha256": "5bf290c2227ae20baf55d689276ba012894109c14144551afb8587e16f6874e8",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/circuit-breaker-diagram.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K019",
+    "item_ids": [
+      "K019"
+    ],
+    "path": "assets/6da2a134f5bf17da-K019.png",
+    "kind": "preview",
+    "bytes": 218641,
+    "sha256": "6da2a134f5bf17daa650b802cdc0177594af31802bac5673f6d48005e3578c39",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/strangler-fig-pattern.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K019",
+    "item_ids": [
+      "K019"
+    ],
+    "path": "assets/9d4f17dbd26bf01a-K019-strangler-fig-pattern.svg",
+    "kind": "original",
+    "bytes": 18075,
+    "sha256": "9d4f17dbd26bf01a5fd2378f4f3fb12aa972e16827184199b3ff0f24a207c45c",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/strangler-fig-pattern.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K019",
+    "item_ids": [
+      "K019"
+    ],
+    "path": "assets/352bab7e7a59e1e0-K019-alt1-strangler-fig-database.svg",
+    "kind": "original",
+    "bytes": 358547,
+    "sha256": "352bab7e7a59e1e04c5bd23a6964a38449b2fd9f1c5a02f77ba9b11fd96c8e5c",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/strangler-fig-pattern.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K019",
+    "item_ids": [
+      "K019"
+    ],
+    "path": "assets/e6d71f797ec659fa-K019-alt1.png",
+    "kind": "additional_preview",
+    "bytes": 229234,
+    "sha256": "e6d71f797ec659fa235600b0178c18abdaf976de91d22ede203fa166531a5527",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/strangler-fig-pattern.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K020",
+    "item_ids": [
+      "K020"
+    ],
+    "path": "assets/66a26ce36d5d4202-K020.png",
+    "kind": "preview",
+    "bytes": 275520,
+    "sha256": "66a26ce36d5d420268b6490f969008a81c4a8bde8c126124432f1ebeb606e50b",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/images/fabric-deployment-pattern-3-multiple-workspaces-multiple-capacities.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K020",
+    "item_ids": [
+      "K020"
+    ],
+    "path": "assets/67a62d74afd84959-K020-fabric-deployment-pattern-3-multiple-workspaces-multiple-capacities.svg",
+    "kind": "original",
+    "bytes": 867025,
+    "sha256": "67a62d74afd84959050da5632c083439eaaa0deaea27d1a8a6d5a45f0f5c7ca1",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/images/fabric-deployment-pattern-3-multiple-workspaces-multiple-capacities.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K021",
+    "item_ids": [
+      "K021"
+    ],
+    "path": "assets/b3f1da01d28ce612-K021.png",
+    "kind": "preview",
+    "bytes": 73120,
+    "sha256": "b3f1da01d28ce61278c5849c7dbd542da73e448869d8d9d55f825c200b15cc0f",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/compensating-transaction.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K021",
+    "item_ids": [
+      "K021"
+    ],
+    "path": "assets/bd1ebbe1acb427e0-K021-compensating-transaction.svg",
+    "kind": "original",
+    "bytes": 19961,
+    "sha256": "bd1ebbe1acb427e0f5c4e543c0a834a5107f1b7e64cdec57da3f4fe69c43fea6",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/compensating-transaction.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K022",
+    "item_ids": [
+      "K022"
+    ],
+    "path": "assets/a6b46706c205d775-K022.png",
+    "kind": "preview",
+    "bytes": 297708,
+    "sha256": "a6b46706c205d7759a728bd2d8eb7c1073c894c451f99b7454d3d0311c00a6f2",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/sharding-example.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K022",
+    "item_ids": [
+      "K022"
+    ],
+    "path": "assets/f3680ba544842e4b-K022-sharding-example.svg",
+    "kind": "original",
+    "bytes": 192599,
+    "sha256": "f3680ba544842e4b6a7eee2c0fc0bffdf65f377550dc90ccc2201afa0869ec49",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/sharding-example.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K023",
+    "item_ids": [
+      "K023"
+    ],
+    "path": "assets/6bc094098f5f90ab-K023.png",
+    "kind": "preview",
+    "bytes": 17114,
+    "sha256": "6bc094098f5f90ab7924e2964c77f1ac0353889d8350cedbbb4cb6c9a62b3bc3",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/queue-based-load-leveling-pattern.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K023",
+    "item_ids": [
+      "K023"
+    ],
+    "path": "assets/dfa8603ea699cadd-K023-queue-based-load-leveling-pattern.png",
+    "kind": "original",
+    "bytes": 10790,
+    "sha256": "dfa8603ea699cadd3c90a5eccac0d58a99fe66fccc85ef81dfb4ff0498b72e86",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/queue-based-load-leveling-pattern.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K031",
+    "item_ids": [
+      "K031"
+    ],
+    "path": "assets/b75105237a43e1f7-K031.png",
+    "kind": "preview",
+    "bytes": 103783,
+    "sha256": "b75105237a43e1f76ad514271b8cffa190f2672e8e0d2721e3f5958ab27d948d",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/images/gitops-flow.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "K031",
+    "item_ids": [
+      "K031"
+    ],
+    "path": "assets/6b179f2096615745-K031-gitops-flow.svg",
+    "kind": "original",
+    "bytes": 88629,
+    "sha256": "6b179f2096615745c097b626d84f17d4edcac3ec84ffc36bcc2e9201818cb34e",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/images/gitops-flow.svg",
+    "license": "CC BY 4.0"
+  },
+  {
+    "item_id": "U011",
+    "item_ids": [
+      "U011"
+    ],
+    "path": "assets/b4e725c54d293856-U011.png",
+    "kind": "original",
+    "bytes": 40623,
+    "sha256": "b4e725c54d29385688a820a08ccb326e0175ea70bc5f58523a857211d5578c63",
+    "source_url": "https://raw.githubusercontent.com/camunda/camunda-docs/b2f73419640e329120a1482aec4e5134811533e3/docs/components/modeler/dmn/assets/decision-requirements-graph/drd.png",
+    "license": "Creative Commons 署名-相同方式共享许可（仓库 LICENSE.txt 原文未标版本）"
+  },
+  {
+    "item_id": "U011",
+    "item_ids": [
+      "U011"
+    ],
+    "path": "assets/b2bec9c683a06583-Camunda-docs-LICENSE.txt",
+    "kind": "original",
+    "bytes": 19385,
+    "sha256": "b2bec9c683a06583ffb905b4bfd25892432acd1b487fc5bfb3efdd14893940e7",
+    "source_url": "https://raw.githubusercontent.com/camunda/camunda-docs/b2f73419640e329120a1482aec4e5134811533e3/docs/components/modeler/dmn/assets/decision-requirements-graph/drd.png",
+    "license": "Creative Commons 署名-相同方式共享许可（仓库 LICENSE.txt 原文未标版本）"
+  }
+]

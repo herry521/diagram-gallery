@@ -1,0 +1,3542 @@
+[
+  {
+    "id": "K002",
+    "title": "Fabric 湖仓：批流双通道与统一消费出口",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/greenfield-lakehouse-fabric",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Fabric 湖仓：批流双通道与统一消费出口。来源：https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/greenfield-lakehouse-fabric。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "R003",
+    "title": "购买漏斗与复购回路叠加",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/consumer-decision-journey-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/consumer-decision-journey-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R006",
+    "title": "共享节点的双环协作",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/dual-hexagonal-cycle-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/dual-hexagonal-cycle-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C002",
+    "title": "战略钟：制定与执行的双循环及回流",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/strategy-clockwork-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/strategy-clockwork-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C034",
+    "title": "服务蓝图：六条泳道与三种交互边界",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/service-blueprint-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/service-blueprint-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "K025",
+    "title": "主数据治理：治理顶层、主数据主线与交易旁路",
+    "source": "Microsoft Learn · Purview",
+    "source_url": "https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-profisee",
+    "status": "link_only",
+    "license": "第三方图片保留版权，未取得再分发许可",
+    "license_url": "https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-profisee",
+    "reason": "Microsoft Purview 页面包含 Semarchy / Profisee 第三方架构图，没有核实该图的独立公开再分发许可；不得套用另一个 architecture-center 仓库的 CC 许可。",
+    "attribution": "Profisee / Microsoft Learn — 主数据治理：治理顶层、主数据主线与交易旁路。来源：https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-profisee。第三方图片保留版权，未取得再分发许可。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "K026",
+    "title": "黄金记录：多来源字段择优与血缘映射",
+    "source": "Microsoft Learn · Purview",
+    "source_url": "https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-profisee",
+    "status": "link_only",
+    "license": "第三方图片保留版权，未取得再分发许可",
+    "license_url": "https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-profisee",
+    "reason": "Microsoft Purview 页面包含 Semarchy / Profisee 第三方架构图，没有核实该图的独立公开再分发许可；不得套用另一个 architecture-center 仓库的 CC 许可。",
+    "attribution": "Profisee / Microsoft Learn — 黄金记录：多来源字段择优与血缘映射。来源：https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-profisee。第三方图片保留版权，未取得再分发许可。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "C028",
+    "title": "数据治理策略：五类工作×五个用例",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-governance-strategy-matrix-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-governance-strategy-matrix-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R022",
+    "title": "总量构成到子组构成的钻取",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/pie-chart-hierarchy-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/pie-chart-hierarchy-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R038",
+    "title": "双中心与两侧子项对照",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/10-point-dual-hub-comparison-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/10-point-dual-hub-comparison-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R041",
+    "title": "战略钻石与五类问题映射",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/strategy-diamond-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/strategy-diamond-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C036",
+    "title": "SPICED 旅程：承诺前收敛与承诺后扩展",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/spiced-model-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/spiced-model-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "K030",
+    "title": "观测体系：资源来源、采集、存储与消费能力矩阵",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 观测体系：资源来源、采集、存储与消费能力矩阵。来源：https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "C037",
+    "title": "风险蝴蝶结：原因、屏障、事件与后果",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/bowtie-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/bowtie-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C012",
+    "title": "数据平台：三层主链与侧向开发运维支撑",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/hadoop-architecture-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/hadoop-architecture-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R033",
+    "title": "多组成员—公共层—输出联动",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/3group-hierarchy-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/3group-hierarchy-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B001",
+    "title": "架构交付物选择：问题驱动的双段决策树",
+    "source": "Capstera",
+    "source_url": "https://capstera.com/free-resources",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://capstera.com/free-resources",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B002",
+    "title": "软件分布：云端与本地环境中的嵌套组件",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/software-distribution-diagram",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/software-distribution-diagram",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B003",
+    "title": "架构路线图：时间阶段、能力泳道与工作包依赖",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/architecture-roadmap",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/architecture-roadmap",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B004",
+    "title": "方案上下文：用户角色、中心能力与外围业务系统",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/solution-context-diagram",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/solution-context-diagram",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B005",
+    "title": "方案实现：应用内部组件与跨边界技术依赖",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/solution-realization-diagram",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/solution-realization-diagram",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P002",
+    "title": "Customer Journey Map",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/customer-journey-map-presentation/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/customer-journey-map-presentation/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P003",
+    "title": "Blue Ocean Strategy",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/blue-ocean-strategy-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/blue-ocean-strategy-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P004",
+    "title": "Business Model Canvas",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/business-model-canvas-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/business-model-canvas-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "M001",
+    "title": "Nesta · 创新流程：阶段 × 证据与资源",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 创新流程：阶段 × 证据与资源。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M007",
+    "title": "Nesta · 变化理论：行动、效果与假设",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 变化理论：行动、效果与假设。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M009",
+    "title": "Nesta · 人物关系图：同心层与扇区",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 人物关系图：同心层与扇区。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M012",
+    "title": "Nesta · 服务蓝图：阶段 × 前后台活动",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 服务蓝图：阶段 × 前后台活动。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M014",
+    "title": "Nesta · 创新阶段：螺旋展开与局部注解",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 创新阶段：螺旋展开与局部注解。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M015",
+    "title": "Design Council · 系统设计框架",
+    "source": "Design Council",
+    "source_url": "https://www.designcouncil.org.uk/resources/systemic-design-framework/",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://www.designcouncil.org.uk/resources/systemic-design-framework/",
+    "reason": "官方对应资源页紧邻框架图明确标注 Design Council 与 CC BY 4.0，授权对象直接包含框架图；按署名要求原样展示。",
+    "attribution": "Design Council — Design Council · 系统设计框架。来源：https://www.designcouncil.org.uk/resources/systemic-design-framework/。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Design Council 署名、来源与许可链接"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "M016",
+    "title": "Emma Blomkamp · 系统设计实践轮",
+    "source": "Emma Blomkamp / New Know How",
+    "source_url": "https://www.newknow.how/resources/systemic-design-practice-wheel",
+    "status": "allowed",
+    "license": "CC BY-NC 4.0",
+    "license_url": "https://www.newknow.how/resources/systemic-design-practice-wheel",
+    "reason": "作者页面明确允许非商业使用、改编和分享，CC BY-NC 链接指向 4.0；本地 PNG 与配套 Planning and Reflection Canvas PDF 均标有 Emma Blomkamp 2021 CC BY-NC，许可范围覆盖这两项。",
+    "attribution": "Emma Blomkamp 2021 / New Know How — Emma Blomkamp · 系统设计实践轮。来源：https://www.newknow.how/resources/systemic-design-practice-wheel。CC BY-NC 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅非商业用途",
+      "保留作者、年份、来源和 CC BY-NC 4.0 链接"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "A16",
+    "title": "Value Stream Mapping：价值阶段×能力/系统/责任",
+    "source": "Capstera",
+    "source_url": "https://capstera.com/free-resources",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://capstera.com/free-resources",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A03",
+    "title": "Digital Operating Model：战略带、双业务域与支撑底座",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/digital-operating-model-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/digital-operating-model-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A12",
+    "title": "Customer vs Business Goals：双视角沿旅程对照",
+    "source": "infoDiagram",
+    "source_url": "https://www.infodiagram.com/slides/client-s-company-s-goals-comparison-in-customer-journey",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.infodiagram.com/slides/client-s-company-s-goals-comparison-in-customer-journey",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A18",
+    "title": "SAP Use-Case Blueprint：用户动作到技术能力",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/wp-content/uploads/2021/03/SAP-AppHaus_Architecture-Thinking-Templates.pdf#page=46",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/wp-content/uploads/2021/03/SAP-AppHaus_Architecture-Thinking-Templates.pdf#page=46",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A15",
+    "title": "Target Operating Model Canvas：现状与目标成对画布",
+    "source": "Capstera",
+    "source_url": "https://capstera.com/free-resources",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://capstera.com/free-resources",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A09",
+    "title": "Hoshin Planning X Matrix：四组事项的角区关联",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/hoshin-kanri-powerpoint-template/hoshin-karin-x-matrix-template-ppt/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/hoshin-kanri-powerpoint-template/hoshin-karin-x-matrix-template-ppt/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A01",
+    "title": "House of Strategy：带情境约束的战略屋",
+    "source": "Goal Atlas",
+    "source_url": "https://goalatlas.com/house-of-strategy/",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://goalatlas.com/house-of-strategy/",
+    "reason": "Goal Atlas 官方 House of Strategy 页面明确表示全部下载采用 CC BY 4.0，并指定署名 Goal Atlas 2024；本地文件是同页模板图。",
+    "attribution": "Goal Atlas 2024 — House of Strategy：带情境约束的战略屋。来源：https://goalatlas.com/house-of-strategy/。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "按官网要求署名 Goal Atlas 2024",
+      "保留来源和 CC BY 4.0 链接"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "E23",
+    "title": "Customer Journey Map",
+    "source": "Slidesgo",
+    "source_url": "https://slidesgo.com/theme/customer-journey-map",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidesgo.com/theme/customer-journey-map",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E26",
+    "title": "Strategy Map Infographics",
+    "source": "Slidesgo",
+    "source_url": "https://slidesgo.com/theme/strategy-map-infographics",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidesgo.com/theme/strategy-map-infographics",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E27",
+    "title": "Canvas Business Model Infographics",
+    "source": "Slidesgo",
+    "source_url": "https://slidesgo.com/theme/canvas-business-model-infographics",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidesgo.com/theme/canvas-business-model-infographics",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E14",
+    "title": "Project Roadmap Gantt Chart",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/project-roadmap-gantt-chart-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/project-roadmap-gantt-chart-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E12",
+    "title": "Four-Column Feature Comparison",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/feature-comparison-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/feature-comparison-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "T02",
+    "title": "OCI 架构图工具包：逐层展开与逻辑/物理画布",
+    "source": "Oracle",
+    "source_url": "https://docs.oracle.com/en-us/iaas/Content/General/Reference/graphicsfordiagrams.htm",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://docs.oracle.com/en-us/iaas/Content/General/Reference/graphicsfordiagrams.htm",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L03",
+    "title": "采购价值流阶段与能力交叉映射",
+    "source": "企业级业务架构设计：方法论与实践0421 (1).pdf",
+    "source_url": "来源索引.html#L03",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L23",
+    "title": "客户生命周期—运营策略—标签体系（说明性名称）",
+    "source": "用户附图 4（原始作者、文档、页码未知）",
+    "source_url": "来源索引.html#L23",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L01",
+    "title": "5A 架构跨域元模型（说明性名称）",
+    "source": "1-中国一汽数字化转型治理体系分享（理想）(发布版）.pdf",
+    "source_url": "来源索引.html#L01",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A02",
+    "title": "Target Operating Model：愿景到治理的分层模型",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/target-operating-model-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/target-operating-model-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A04",
+    "title": "Capabilities Heatmap：能力评估热图",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/capabilities-heatmap-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/capabilities-heatmap-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A05",
+    "title": "Strategy Map：四视角目标关系图",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/strategy-map-template-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/strategy-map-template-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A06",
+    "title": "Value Chain：主活动、支持活动与外部价值链",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/value-chain-diagrams-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/value-chain-diagrams-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A07",
+    "title": "Business Ecosystem：层级与循环的复合图",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/business-ecosystem-diagram-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/business-ecosystem-diagram-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A08",
+    "title": "Business Model Canvas：九域非均分画布",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/editable-business-model-canvas-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/editable-business-model-canvas-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A10",
+    "title": "Free Service Blueprint：四类参与面泳道",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/free-powerpoint-templates/free-service-blueprint-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/free-powerpoint-templates/free-service-blueprint-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A11",
+    "title": "Customer Journey Map：阶段与触点主线",
+    "source": "infoDiagram",
+    "source_url": "https://www.infodiagram.com/slides/customer-journey-line-roadmap-touchpoints/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.infodiagram.com/slides/customer-journey-line-roadmap-touchpoints/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A13",
+    "title": "Customer Experience Goals：生命周期×信息属性表",
+    "source": "infoDiagram",
+    "source_url": "https://www.infodiagram.com/slides/customer-experience-goals-table-template",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.infodiagram.com/slides/customer-experience-goals-table-template",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A14",
+    "title": "Online Shopping Journey：阶段×渠道触点",
+    "source": "infoDiagram",
+    "source_url": "https://www.infodiagram.com/slides/online-customer-journey-diagram-with-touchpoint",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.infodiagram.com/slides/online-customer-journey-diagram-with-touchpoint",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A17",
+    "title": "SAP Strategy Map：战略目标到项目的对齐矩阵",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/wp-content/uploads/2021/03/SAP-AppHaus_Architecture-Thinking-Templates.pdf#page=14",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/wp-content/uploads/2021/03/SAP-AppHaus_Architecture-Thinking-Templates.pdf#page=14",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A19",
+    "title": "SAP Solution Concept：角色、方案组件与后端边界",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/wp-content/uploads/2021/03/SAP-AppHaus_Architecture-Thinking-Templates.pdf#page=56",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/wp-content/uploads/2021/03/SAP-AppHaus_Architecture-Thinking-Templates.pdf#page=56",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A20",
+    "title": "Business Capability Map：分层嵌套与能力分类",
+    "source": "Business Architecture Guild",
+    "source_url": "https://cdn.ymaws.com/www.businessarchitectureguild.org/resource/resmgr/public_resources/baguild_government_ref_model.pdf#page=12",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://cdn.ymaws.com/www.businessarchitectureguild.org/resource/resmgr/public_resources/baguild_government_ref_model.pdf#page=12",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A22",
+    "title": "Typical IT Operating Model：运营全景分区",
+    "source": "AWS Prescriptive Guidance",
+    "source_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-transform-adm-operating-model-gen-ai/it-op-model.html",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-transform-adm-operating-model-gen-ai/it-op-model.html",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A23",
+    "title": "Data Governance Model：四层数据治理体系",
+    "source": "Data.NSW",
+    "source_url": "https://www.data.nsw.gov.au/data-capability/data-governance-toolkit/module-3-data-governance",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.data.nsw.gov.au/data-capability/data-governance-toolkit/module-3-data-governance",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A24",
+    "title": "Service Blueprint：现状服务与改造标记",
+    "source": "Lucid",
+    "source_url": "https://lucid.co/templates/service-blueprint-current-and-future-state-example",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://lucid.co/templates/service-blueprint-current-and-future-state-example",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A25",
+    "title": "Theory of Change：多项目到共同影响的因果链",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/theory-of-change-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/theory-of-change-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "A26",
+    "title": "Matrix Org Chart：职能×项目中的人类与AI角色",
+    "source": "infoDiagram",
+    "source_url": "https://www.infodiagram.com/slides/matrix-org-chart-with-ai-agents",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.infodiagram.com/slides/matrix-org-chart-with-ai-agents",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L02",
+    "title": "一汽工作台建设方法",
+    "source": "1-中国一汽数字化转型治理体系分享（理想）(发布版）.pdf",
+    "source_url": "来源索引.html#L02",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L04",
+    "title": "业务流程—二维流程架构",
+    "source": "企业级业务架构设计：方法论与实践0421 (1).pdf",
+    "source_url": "来源索引.html#L04",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L05",
+    "title": "ROA 模型",
+    "source": "企业级业务架构设计：方法论与实践0421 (1).pdf",
+    "source_url": "来源索引.html#L05",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L06",
+    "title": "设计业务组件、封装能力中心",
+    "source": "13-应用架构设计.pdf",
+    "source_url": "来源索引.html#L06",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L07",
+    "title": "工作台及能力中心设计—始于架构，终于架构",
+    "source": "13-应用架构设计.pdf",
+    "source_url": "来源索引.html#L07",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L08",
+    "title": "业务单元属性全景（说明性名称）",
+    "source": "5-EAMAP产品培训.pdf",
+    "source_url": "来源索引.html#L08",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L09",
+    "title": "信息架构组件—数据模型",
+    "source": "10-中国一汽信息架构治理.pdf",
+    "source_url": "来源索引.html#L09",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L10",
+    "title": "TOGAF 架构的内在数据逻辑",
+    "source": "10-中国一汽信息架构治理.pdf",
+    "source_url": "来源索引.html#L10",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L11",
+    "title": "指标数据治理方法：营销领域指标实例",
+    "source": "11-中国一汽指标数据设计与实践.pdf",
+    "source_url": "来源索引.html#L11",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L12",
+    "title": "基于业务主体的数据治理体系",
+    "source": "6-中国一汽需求拉动数据治理实践分享.pdf",
+    "source_url": "来源索引.html#L12",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L13",
+    "title": "任务流程与作业平台承接（说明性名称）",
+    "source": "6-中国一汽需求拉动数据治理实践分享.pdf",
+    "source_url": "来源索引.html#L13",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L14",
+    "title": "数据管理组织架构",
+    "source": "7-数据管理组织架构.pdf",
+    "source_url": "来源索引.html#L14",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L15",
+    "title": "匹配数据人才",
+    "source": "7-数据管理组织架构.pdf",
+    "source_url": "来源索引.html#L15",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L16",
+    "title": "工厂物流：因子取值与场景组合（说明性名称）",
+    "source": "2-OTD数字化转型实践.pdf",
+    "source_url": "来源索引.html#L16",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L17",
+    "title": "以数据运营驱动价值创造",
+    "source": "2-OTD数字化转型实践.pdf",
+    "source_url": "来源索引.html#L17",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L18",
+    "title": "数智化能力体系：T 序列培养方案",
+    "source": "3-研发数字化转型实践.pdf",
+    "source_url": "来源索引.html#L18",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L19",
+    "title": "基于业务单元的设计师工作台",
+    "source": "3-研发数字化转型实践.pdf",
+    "source_url": "来源索引.html#L19",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L20",
+    "title": "用户旅程",
+    "source": "9-中国一汽数据工作台产品介绍.pdf",
+    "source_url": "来源索引.html#L20",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L21",
+    "title": "消费者触点与身份标识关联（说明性名称）",
+    "source": "用户附图 1（原始作者、文档、页码未知）",
+    "source_url": "来源索引.html#L21",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L22",
+    "title": "E-U-I 到多实体模型（说明性名称）",
+    "source": "用户附图 3（原始作者、文档、页码未知）",
+    "source_url": "来源索引.html#L22",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L24",
+    "title": "用户分层与用户分群（说明性名称）",
+    "source": "用户附图 5（原始作者、文档、页码未知）",
+    "source_url": "来源索引.html#L24",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L25",
+    "title": "以用户为核心的数字化运营新体系",
+    "source": "用户附图 9（原始作者、文档、页码未知）",
+    "source_url": "来源索引.html#L25",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "L26",
+    "title": "高效的基础数据模型—Event User Item",
+    "source": "用户附图 10（原始作者、文档、页码未知）",
+    "source_url": "来源索引.html#L26",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "T01",
+    "title": "AWS 架构 PPT 工具包：图组、连线与编号示例",
+    "source": "Amazon Web Services",
+    "source_url": "https://aws.amazon.com/architecture/icons/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://aws.amazon.com/architecture/icons/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "T03",
+    "title": "Microsoft 零信任部署规划图",
+    "source": "Microsoft",
+    "source_url": "https://learn.microsoft.com/en-us/previous-versions/microsoft-365/solutions/cloud-architecture-models",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://learn.microsoft.com/en-us/previous-versions/microsoft-365/solutions/cloud-architecture-models",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "T04",
+    "title": "C4 Container diagram：单系统边界与外部关系",
+    "source": "Simon Brown / C4 model",
+    "source_url": "https://c4model.com/diagrams/container",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://c4model.com/diagrams/container",
+    "reason": "C4 官方站点明确将 website and example diagrams 置于 CC BY 4.0；本地容器图底部还直接标有 Simon Brown、c4model.com 与 License: CC BY 4.0。",
+    "attribution": "Simon Brown / C4 model — C4 Container diagram：单系统边界与外部关系。来源：https://c4model.com/diagrams/container。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留原图底部署名与许可",
+      "添加来源链接"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "T05",
+    "title": "Service Blueprint：家电零售服务蓝图",
+    "source": "Nielsen Norman Group / Sarah Gibbons",
+    "source_url": "https://www.nngroup.com/articles/service-blueprints-definition/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.nngroup.com/articles/service-blueprints-definition/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "T06",
+    "title": "Ecosystem Map：消防服务生态关系",
+    "source": "Service Design Tools / frog",
+    "source_url": "https://servicedesigntools.org/tools/ecosystem-map",
+    "status": "link_only",
+    "license": "站点页脚 CC BY-NC-ND 2.5；第三方案例图许可未确认",
+    "license_url": "https://servicedesigntools.org/tools/ecosystem-map",
+    "reason": "该页面把消防案例明确署名 frog，并链接外部案例材料；站点通用页脚的 CC BY-NC-ND 2.5 没有明确说明其涵盖 frog 案例图的媒体权利。按第三方图片例外保守处理，公开版只列来源。",
+    "attribution": "frog / Service Design Tools — Ecosystem Map：消防服务生态关系。来源：https://servicedesigntools.org/tools/ecosystem-map。站点页脚 CC BY-NC-ND 2.5；第三方案例图许可未确认。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "T07",
+    "title": "Framework for Innovation：双钻与外围原则",
+    "source": "Design Council",
+    "source_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+    "reason": "官方对应资源页紧邻框架图明确标注 Design Council 与 CC BY 4.0，授权对象直接包含框架图；按署名要求原样展示。",
+    "attribution": "Design Council — Framework for Innovation：双钻与外围原则。来源：https://www.designcouncil.org.uk/resources/framework-for-innovation/。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Design Council 署名、来源与许可链接"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "T08",
+    "title": "Azure 批流摄入与分层数据平台示例",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Azure 批流摄入与分层数据平台示例。来源：https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "T09",
+    "title": "Data Mesh：领域、数据产品与共享平台",
+    "source": "Google Cloud Architecture Center",
+    "source_url": "https://docs.cloud.google.com/architecture/data-mesh?hl=en",
+    "status": "link_only",
+    "license": "页面正文 CC BY 4.0；图像授权未单独确认",
+    "license_url": "https://developers.google.com/terms/site-policies",
+    "reason": "原页面底部有 CC BY 4.0 通用通知，但其链接的 Site Policies 对图像、音视频及外部内容列出许可例外；现有这幅具体图未找到单独授权说明。本次保守仅发布来源链接，不能仅凭页面正文许可推导媒体再分发权。",
+    "attribution": "Google Cloud — Data Mesh：领域、数据产品与共享平台。来源：https://docs.cloud.google.com/architecture/data-mesh?hl=en。页面正文 CC BY 4.0；图像授权未单独确认。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "E01",
+    "title": "Block Process Diagram",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/block-process-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/block-process-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E02",
+    "title": "Converging Paths Arrow",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/converging-paths-arrow-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/converging-paths-arrow-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E03",
+    "title": "Dual Flow Comparison Diagram",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/dual-flow-comparison-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/dual-flow-comparison-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E04",
+    "title": "Five-Point Radial Hub",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/five-point-radial-hub-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/five-point-radial-hub-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E05",
+    "title": "The PDCA Cycle",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/pdca-cycle-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/pdca-cycle-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E06",
+    "title": "4-Layer Strategic Pyramid",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/strategic-pyramid-four-level-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/strategic-pyramid-four-level-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E07",
+    "title": "Four-Level Isometric Stack",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/four-level-isometric-stack-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/four-level-isometric-stack-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E08",
+    "title": "Organizational Hierarchy Map",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/organizational-hierarchy-map-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/organizational-hierarchy-map-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E09",
+    "title": "Venn Hexagonal Framework",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/venn-hexagonal-framework-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/venn-hexagonal-framework-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E10",
+    "title": "Matrix Template",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/matrix-template-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/matrix-template-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E11",
+    "title": "Side-by-Side Comparison",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/side-by-side-comparison-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/side-by-side-comparison-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B006",
+    "title": "概念数据图：实体属性、关系动词与基数",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/conceptual-data-diagram",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/conceptual-data-diagram",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E13",
+    "title": "5-step Purchase Funnel",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/5-step-purchase-funnel-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/5-step-purchase-funnel-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B007",
+    "title": "环境与地点：跨地域中心、办公地点与网络通道",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/environments-and-location-diagram",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/environments-and-location-diagram",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E15",
+    "title": "Horizontal Swim-Lane Timeline",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/horizontal-swim-lane-timeline-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/horizontal-swim-lane-timeline-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E16",
+    "title": "Iceberg Insight Diagram",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/iceberg-insight-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/iceberg-insight-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E17",
+    "title": "Fishbone for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/fishbone-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/fishbone-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E18",
+    "title": "Multilayered Pathway Wheel",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/multilayered-pathway-wheel-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/multilayered-pathway-wheel-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B011",
+    "title": "业务场景分镜：Scenes 数字故事板与物流示例",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/vision-storyboard",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/vision-storyboard",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E19",
+    "title": "Core Values Pillars",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/core-values-pillars-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/core-values-pillars-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B012",
+    "title": "商业模式画布：九域分区与废弃物服务案例",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/validate-your-business-model",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/validate-your-business-model",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E20",
+    "title": "Cycle Diagrams for PowerPoint",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/21/02/2018/charts-and-diagrams/cycle-diagrams-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/21/02/2018/charts-and-diagrams/cycle-diagrams-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B013",
+    "title": "假设验证：风险×验证成本上的三色证据组",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/validate-your-business-model",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/validate-your-business-model",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E21",
+    "title": "Charts & Infographics PowerPoint Templates",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/21/10/2015/charts-and-diagrams/charts-infographics-powerpoint-templates/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/21/10/2015/charts-and-diagrams/charts-infographics-powerpoint-templates/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B014",
+    "title": "项目价值热图：可替换评价轴与方案位置",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/value-heatmap",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/value-heatmap",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E22",
+    "title": "Cause and Effect Tree Diagrams For PowerPoint",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/16/11/2013/charts-and-diagrams/cause-and-effect-tree-diagrams-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/16/11/2013/charts-and-diagrams/cause-and-effect-tree-diagrams-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B015",
+    "title": "人物画像：人口信息、活动、环境与感受四域",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/persona",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/persona",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E24",
+    "title": "Matrix Templates",
+    "source": "Slidesgo",
+    "source_url": "https://slidesgo.com/theme/matrix-templates",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidesgo.com/theme/matrix-templates",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B016",
+    "title": "利益相关者地图：直接与间接关系的同心圈",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/stakeholder-map",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/stakeholder-map",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E25",
+    "title": "Flow Diagram Infographics",
+    "source": "Slidesgo",
+    "source_url": "https://slidesgo.com/theme/flow-diagram-infographics",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidesgo.com/theme/flow-diagram-infographics",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B017",
+    "title": "体验旅程：心态、行动、触点三轨逐步对齐",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/user-experience-journey-map",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/user-experience-journey-map",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "E28",
+    "title": "Gradient Business Plan with Timeline Infographics",
+    "source": "SlidesCarnival",
+    "source_url": "https://www.slidescarnival.com/template/business-plan-with-timeline-infographics/63185",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.slidescarnival.com/template/business-plan-with-timeline-infographics/63185",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B018",
+    "title": "情境花瓣图：中心挑战与八个分析视角",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/context-map",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/context-map",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B020",
+    "title": "行动计划：阶段矩阵指向愿景与约束圈",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/game-plan",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/game-plan",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B021",
+    "title": "Scenes 场景插画库：人物、对话、物流与零售空间",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/scenes",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/scenes",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "M002",
+    "title": "Nesta · 循证计划：中心议题与四类影响",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 循证计划：中心议题与四类影响。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M003",
+    "title": "Nesta · 商业模式画布：九块职责拼接",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 商业模式画布：九块职责拼接。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M004",
+    "title": "Nesta · 构建伙伴关系：往返阶段路径",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 构建伙伴关系：往返阶段路径。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M005",
+    "title": "Nesta · 循环学习：四块内容与反馈闭环",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 循环学习：四块内容与反馈闭环。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M006",
+    "title": "Nesta · 成因图：表象与原因双支路",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 成因图：表象与原因双支路。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M008",
+    "title": "Nesta · 故事世界：人物、环境与证据",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 故事世界：人物、环境与证据。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M010",
+    "title": "Nesta · 承诺与潜力：新旧用户 × 新旧供给",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 承诺与潜力：新旧用户 × 新旧供给。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M011",
+    "title": "Nesta · 体验图：阶段、接触与收获",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 体验图：阶段、接触与收获。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "M017",
+    "title": "Service Design Tools · 服务蓝图空白模板",
+    "source": "Service Design Tools / oblo",
+    "source_url": "https://servicedesigntools.org/tools/service-blueprint",
+    "status": "allowed",
+    "license": "CC BY-NC-ND 2.5",
+    "license_url": "https://servicedesigntools.org/tools/service-blueprint",
+    "reason": "工具页页脚明确 CC BY-NC-ND 2.5，并从同页直接提供网站自有 Service Blueprint 模板 PDF；PDF 标有 servicedesigntools.org。仅完整原版 PDF 和整页等比预览在本次非商业学习展示范围内，不发布填写、翻译、裁剪或改编版本。",
+    "attribution": "Service Design Tools / oblo — Service Design Tools · 服务蓝图空白模板。来源：https://servicedesigntools.org/tools/service-blueprint。CC BY-NC-ND 2.5。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-nd/2.5/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅非商业用途",
+      "不改编、不翻译、不裁剪；只按完整原版再分发",
+      "保留网站署名、来源与 CC BY-NC-ND 2.5 许可说明"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-nd/2.5/",
+    "noncommercial_only": true,
+    "no_derivatives": true
+  },
+  {
+    "id": "M013",
+    "title": "Nesta · 规模计划：当前核心与五类条件",
+    "source": "Nesta / DIY Toolkit（官方中文版）",
+    "source_url": "https://www.nesta.org.uk/toolkit/diy-toolkit/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.nesta.org.uk/documents/2537/DIY_Mandarin_FullToolkit.pdf#page=3",
+    "reason": "官方中文下载 PDF 与英文 PDF 的第 3 页均标明本作品 ©Nesta、CC BY-NC-SA 4.0；官方工具包页也列出该声明。当前个人非商业学习图库可按许可展示完整页面和提供原版 PDF；须保留书内各方法来源与原版版权页，不将商业使用自由误写为开放商用。",
+    "attribution": "Nesta；DIY Toolkit，合作方 STBY / Quicksand — Nesta · 规模计划：当前核心与五类条件。来源：https://www.nesta.org.uk/toolkit/diy-toolkit/。CC BY-NC-SA 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "仅限非商业用途，公开图库不得附加商业销售或收费模板用途",
+      "保持原 PDF 及方法来源说明",
+      "如改编页面内容，改编作品依相同许可分享；当前预览只做格式/尺寸适配"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "noncommercial_only": true
+  },
+  {
+    "id": "B008",
+    "title": "风险分析：初始风险、缓解措施与残余风险对照",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/risk-analysis",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/risk-analysis",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B009",
+    "title": "架构原则：名称、规则、理由与影响的分层说明",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/define-architecture-principles",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/define-architecture-principles",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B010",
+    "title": "架构工作说明：七段结构中嵌入高层架构图",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/identify-the-scope-of-your-architecture",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/identify-the-scope-of-your-architecture",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "B019",
+    "title": "干系人矩阵：角色、关注点、参与方式与交付物",
+    "source": "SAP AppHaus",
+    "source_url": "https://apphaus.sap.com/resource/stakeholder-matrix",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://apphaus.sap.com/resource/stakeholder-matrix",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S001",
+    "title": "齿轮联动图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/12/12/2025/charts-and-diagrams/gears-infographics-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/12/12/2025/charts-and-diagrams/gears-infographics-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S002",
+    "title": "鱼骨与主轴分支图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/11/08/2025/charts-and-diagrams/fishbone-infographics-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/11/08/2025/charts-and-diagrams/fishbone-infographics-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S003",
+    "title": "营销战略模型套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/14/05/2020/charts-and-diagrams/essential-marketing-models-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/14/05/2020/charts-and-diagrams/essential-marketing-models-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S004",
+    "title": "环形与循环信息图元素套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/27/09/2019/charts-and-diagrams/infographic-elements-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/27/09/2019/charts-and-diagrams/infographic-elements-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S005",
+    "title": "哑铃连接形关系图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/31/03/2019/charts-and-diagrams/dumbbell-diagrams-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/31/03/2019/charts-and-diagrams/dumbbell-diagrams-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S006",
+    "title": "道路与分岔路线图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/04/02/2019/charts-and-diagrams/road-infographics-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/04/02/2019/charts-and-diagrams/road-infographics-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S007",
+    "title": "半圆分层放射图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/20/12/2018/charts-and-diagrams/radial-infographics-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/20/12/2018/charts-and-diagrams/radial-infographics-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S008",
+    "title": "波形流程节点图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/06/08/2018/charts-and-diagrams/process-diagrams-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/06/08/2018/charts-and-diagrams/process-diagrams-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S009",
+    "title": "组织层级与架构排布套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/26/04/2018/charts-and-diagrams/organizational-charts-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/26/04/2018/charts-and-diagrams/organizational-charts-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S010",
+    "title": "仪表盘正文布局套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/01/02/2018/charts-and-diagrams/dashboard-templates-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/01/02/2018/charts-and-diagrams/dashboard-templates-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S011",
+    "title": "思维导图与主题展开套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/22/08/2017/charts-and-diagrams/mind-map-templates-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/22/08/2017/charts-and-diagrams/mind-map-templates-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S012",
+    "title": "二维矩阵与重点展开套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/07/07/2017/charts-and-diagrams/matrix-templates-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/07/07/2017/charts-and-diagrams/matrix-templates-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S013",
+    "title": "数据图表与汇报组合套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/21/02/2017/charts-and-diagrams/data-charts-powerpoint-templates/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/21/02/2017/charts-and-diagrams/data-charts-powerpoint-templates/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S014",
+    "title": "时间线与里程碑信息图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/21/04/2016/charts-and-diagrams/timeline-infographics-templates-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/21/04/2016/charts-and-diagrams/timeline-infographics-templates-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S015",
+    "title": "甘特图与项目时间线套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/18/04/2016/charts-and-diagrams/gantt-charts-and-project-timelines-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/18/04/2016/charts-and-diagrams/gantt-charts-and-project-timelines-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S016",
+    "title": "分层金字塔信息图套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/17/12/2014/charts-and-diagrams/pyramid-infographics-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/17/12/2014/charts-and-diagrams/pyramid-infographics-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S017",
+    "title": "Storre 商务正文模板套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/13/09/2016/templates/storre-multipurpose-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/13/09/2016/templates/storre-multipurpose-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S018",
+    "title": "Oki 多用途商务模板套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/20/01/2022/templates/oki-free-multipurpose-template-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/20/01/2022/templates/oki-free-multipurpose-template-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "S019",
+    "title": "Startup 创业汇报模板套装",
+    "source": "Showeet",
+    "source_url": "https://www.showeet.com/06/01/2021/templates/startup-modern-template-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.showeet.com/06/01/2021/templates/startup-modern-template-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P001",
+    "title": "Two-Way Communication Strategy",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/two-way-communication-strategy-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/two-way-communication-strategy-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P005",
+    "title": "Strategic Growth Cycle Diagram",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/strategic-growth-cycle-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/strategic-growth-cycle-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P008",
+    "title": "Risk Matrix",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/risk-matrix-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/risk-matrix-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P010",
+    "title": "Product Life Cycle (PLC)",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/product-life-cycle-template-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/product-life-cycle-template-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P011",
+    "title": "McKinsey 7S Framework",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/mckinsey-7s-framework-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/mckinsey-7s-framework-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P018",
+    "title": "Galbraith’s Star Model for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/galbraith-star-model-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/galbraith-star-model-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P019",
+    "title": "OKR Framework for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/okr-framework-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/okr-framework-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P020",
+    "title": "Bowtie Diagram for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/bowtie-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/bowtie-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P022",
+    "title": "BCG Matrix Template for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/bcg-matrix-template-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/bcg-matrix-template-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P023",
+    "title": "Triple Loop Process",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/triple-loop-process-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/triple-loop-process-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P024",
+    "title": "Central Spine 6-Step Flow",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/central-spine-6-step-flow-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/central-spine-6-step-flow-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P025",
+    "title": "Wave Milestone Timeline",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/wave-milestone-timeline-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/wave-milestone-timeline-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P026",
+    "title": "Project Status Dashboard",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/project-status-dashboard-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/project-status-dashboard-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P027",
+    "title": "Project Time Plan",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/project-time-plan-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/project-time-plan-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P028",
+    "title": "Concentric Tier Cards",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/concentric-tier-cards-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/concentric-tier-cards-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P029",
+    "title": "Business Growth Tree Diagram",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/business-growth-tree-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/business-growth-tree-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P030",
+    "title": "Radial Mind Map Textboxes for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/radial-mind-map-textboxes-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/radial-mind-map-textboxes-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P031",
+    "title": "Concept Map for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/concept-map-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/concept-map-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P032",
+    "title": "Infographic Network Diagram for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/infographic-network-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/infographic-network-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P033",
+    "title": "Dual-Branch Tree",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/dual-branch-tree-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/dual-branch-tree-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P034",
+    "title": "Diverging Pathway Flow",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/diverging-pathway-flow-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/diverging-pathway-flow-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P035",
+    "title": "Horizontal Relationships for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/horizontal-relationships-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/horizontal-relationships-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P036",
+    "title": "House with 4 Layers for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/house-4layers-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/house-4layers-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P037",
+    "title": "3-Circle Venn Diagram",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/3-circle-venn-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/3-circle-venn-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P038",
+    "title": "Stacked Venn",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/stacked-venn-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/stacked-venn-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P039",
+    "title": "Four-Step Infinity Loop",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/four-step-infinity-loop-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/four-step-infinity-loop-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P041",
+    "title": "Circle Matrix Framework",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/circle-matrix-framework-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/circle-matrix-framework-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P042",
+    "title": "Dual Matrix Cycle for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/dual-matrix-cycle-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/dual-matrix-cycle-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P043",
+    "title": "Balanced Choice Comparison",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/balanced-choice-comparison-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/balanced-choice-comparison-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P044",
+    "title": "Interlocking Business Gears",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/interlocking-business-gears-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/interlocking-business-gears-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P045",
+    "title": "Multi-Dimensional Clock Chart for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/multi-dimensional-clock-chart-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/multi-dimensional-clock-chart-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P046",
+    "title": "Pyramid Population Template for PowerPoint",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/pyramid-population-template-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/pyramid-population-template-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "P047",
+    "title": "Sequence Framework for PowerPoint and Google Slides",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/sequence-framework-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/sequence-framework-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R001",
+    "title": "蛇形棋盘式阶段路径",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/flowchart-board-game-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/flowchart-board-game-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R002",
+    "title": "公共主干与上下分支",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/process-workflow-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/process-workflow-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R004",
+    "title": "六路交汇与中央编织结",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/six-point-convergence-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/six-point-convergence-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R005",
+    "title": "核心—能力—说明的蜂窝集群",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/honeycomb-cluster-diagram-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/honeycomb-cluster-diagram-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R007",
+    "title": "双抛物线与共享交点",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/dual-parabolic-curves-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/dual-parabolic-curves-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R008",
+    "title": "交错菱形关系簇",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/line-design-cluster-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/line-design-cluster-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R009",
+    "title": "大小圆交错的关系集群",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/5circle-relationship-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/5circle-relationship-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R010",
+    "title": "六边形拼图能力组合",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/hexagon-puzzle-cluster-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/hexagon-puzzle-cluster-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R011",
+    "title": "六组各两项的径向分解",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/6x2-two-level-chart-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/6x2-two-level-chart-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R012",
+    "title": "多层同心环与径向引出",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/multi-level-circular-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/multi-level-circular-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R013",
+    "title": "六边形节点关系网络",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/grid-hexagons-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/grid-hexagons-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R014",
+    "title": "同心弧进度与旁列指标",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/multi-level-arc-diagram-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/multi-level-arc-diagram-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R015",
+    "title": "DIKW 金字塔与两侧解释带",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/the-dikw-pyramid-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/the-dikw-pyramid-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R016",
+    "title": "ADL 竞争地位×成熟度热力矩阵",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/adl-matrix-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/adl-matrix-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R017",
+    "title": "SWOT 双轴语义矩阵",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/strategic-analysis-matrix-template-presentation/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/strategic-analysis-matrix-template-presentation/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R018",
+    "title": "SOSTAC 六环节与外侧解释",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/sostac-marketing-model-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/sostac-marketing-model-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R019",
+    "title": "双侧收敛的淘汰赛树",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/knockout-stage-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/knockout-stage-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R020",
+    "title": "纵向层级清单与平行说明",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/vertical-hierarchy-list-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/vertical-hierarchy-list-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R021",
+    "title": "中央主题与成对弧形分支",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/crab-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/crab-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R023",
+    "title": "四条交织色带的协同组合",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/interwoven-bars-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/interwoven-bars-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R024",
+    "title": "从中心向四角发散的曲箭头",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/diverging-curved-arrows-matrix-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/diverging-curved-arrows-matrix-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R025",
+    "title": "带行列分组的九宫格映射",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/3x3-matrix-diagram-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/3x3-matrix-diagram-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R026",
+    "title": "共享指标轴的双侧条形对比",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/split-metrics-comparison-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/split-metrics-comparison-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R027",
+    "title": "连续路径上的阶段构成图",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/four-stage-serpentine-chart-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/four-stage-serpentine-chart-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R028",
+    "title": "半环构成图与逐项解说",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/semicircle-chart-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/semicircle-chart-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R029",
+    "title": "优势模型与量化比较并置",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/competitive-advantage-card-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/competitive-advantage-card-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R030",
+    "title": "客群画像小多图面板",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/demographic-snapshot-charts-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/demographic-snapshot-charts-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R031",
+    "title": "一二三节点分组与公共基线",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/1-2-3-horizontal-hierarchy-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/1-2-3-horizontal-hierarchy-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R032",
+    "title": "向两侧展开的镜像组织树",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/mirrored-horizontal-org-chart-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/mirrored-horizontal-org-chart-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R034",
+    "title": "层级树与逐层释义横带",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/labeled-organization-chart-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/labeled-organization-chart-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R035",
+    "title": "中央主题—四组—多子项的辐射树",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/matrix-circle-relationship-powerpoint-google-slides/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/matrix-circle-relationship-powerpoint-google-slides/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R036",
+    "title": "带阀门的管道阶段流程",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/pipeline-stage-flow-powerpoint-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/pipeline-stage-flow-powerpoint-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R037",
+    "title": "火箭轨迹式递进路径",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/6-step-rocket-launch-process-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/6-step-rocket-launch-process-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R039",
+    "title": "七条弧形输入共同汇聚",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/seven-arrows-converging-cycle-diagram/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/seven-arrows-converging-cycle-diagram/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "R040",
+    "title": "十二分区环形导航与双侧说明",
+    "source": "PresentationGO",
+    "source_url": "https://www.presentationgo.com/presentation/twelve-point-strategic-compass-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://www.presentationgo.com/presentation/twelve-point-strategic-compass-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C001",
+    "title": "数据治理框架：六项质量要求＋三组分支清单",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-governance-framework-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-governance-framework-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C003",
+    "title": "治理运营模型：核心文化、风险环与八个领域",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/6-component-governance-operating-model/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/6-component-governance-operating-model/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C004",
+    "title": "四支柱治理屋：共同目标、基础与两侧改进",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/4-pillar-governance-framework-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/4-pillar-governance-framework-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C005",
+    "title": "业务生态边界：核心业务向扩展企业与生态扩展",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/business-ecosystem-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/business-ecosystem-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C006",
+    "title": "数字化转型三角：业务模型、执行与技术基础",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/digital-transformation-pyramid-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/digital-transformation-pyramid-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C007",
+    "title": "企业数据版图：中枢集成与点对点连接并置",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-lineage-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-lineage-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C008",
+    "title": "业务架构：三类基础对象与五步弧形方法",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/business-architecture-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/business-architecture-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C009",
+    "title": "日志处理：多源摄入、处理分流与分析消费",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-processing-flow-diagram-for-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-processing-flow-diagram-for-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C011",
+    "title": "数据湖两页叙事：异构数据汇聚到统一存储",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-lake-diagram-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-lake-diagram-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C013",
+    "title": "治理模型：中心三角、内外领域与监督箭头",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/deloitte-governance-framework-model-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/deloitte-governance-framework-model-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C015",
+    "title": "数据治理成熟度：阶段列与 S 形演进曲线",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-governance-maturity-model-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-governance-maturity-model-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C016",
+    "title": "数据卓越中心：目标—六类支撑—结果",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/data-strategy-center-of-excellence-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/data-strategy-center-of-excellence-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C019",
+    "title": "运营策略矩阵：绩效目标×决策领域",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/operations-strategy-matrix-template-powerpoint/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/operations-strategy-matrix-template-powerpoint/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C020",
+    "title": "总体战略矩阵：市场增长×竞争地位",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/grand-strategy-matrix-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/grand-strategy-matrix-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C021",
+    "title": "战略—战术—运营：分离层级与旁注",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/strategic-tactical-pyramid-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/strategic-tactical-pyramid-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C022",
+    "title": "战略计划：组织层级×短中长期",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/strategy-development-plan-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/strategy-development-plan-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C023",
+    "title": "战略开发：六步流程与逐步展开的说明列",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/strategy-development-framework-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/strategy-development-framework-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C025",
+    "title": "公司路线图：全年时间×四类工作面",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/corporate-roadmap-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/corporate-roadmap-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C026",
+    "title": "跨越鸿沟：桥上里程碑与底部结论",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/bridge-metaphor-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/bridge-metaphor-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C031",
+    "title": "价值管理三角：目的、治理、基础与外部关注",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/value-based-management-triangle-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/value-based-management-triangle-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C032",
+    "title": "治理闭环：四阶段循环与行动清单",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/governance-framework-cycle-diagram-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/governance-framework-cycle-diagram-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C033",
+    "title": "Wardley 地图：价值链可见性×演化程度＋依赖",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/wardley-map-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/wardley-map-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C035",
+    "title": "技术路线图：阶段推进与能力累积",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/4-steps-technology-roadmap-powerpoint-template/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/4-steps-technology-roadmap-powerpoint-template/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "C038",
+    "title": "Cynefin 示意：非规则分区与中心未判定区",
+    "source": "SlideModel",
+    "source_url": "https://slidemodel.com/templates/cynefin-framework-powerpoint-templates/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://slidemodel.com/templates/cynefin-framework-powerpoint-templates/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D001",
+    "title": "共用回路中的并列节点",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/flo/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/flo/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D002",
+    "title": "围绕共同焦点的平行路径",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/fpa/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/fpa/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D003",
+    "title": "双轨主线与挂接节点",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/fpa/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/fpa/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D004",
+    "title": "框架围护的节点簇",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/jho/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/jho/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D005",
+    "title": "对接结构的局部展开",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/jho/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/jho/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D006",
+    "title": "主体链条与相邻交集",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/jov/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/jov/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D007",
+    "title": "内外成组的双层环状结构",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/sdo/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/sdo/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "D008",
+    "title": "共同基座与分布式分支",
+    "source": "Duarte Diagrammer",
+    "source_url": "https://diagrammer.duarte.com/diagrams/category/nfl/",
+    "status": "link_only",
+    "license": "未取得公开再分发授权",
+    "license_url": "https://diagrammer.duarte.com/diagrams/category/nfl/",
+    "reason": "原素材限本地学习或条款限制模板再分发；本站保留来源与整理者的构图分析。"
+  },
+  {
+    "id": "N001",
+    "title": "同一人口系统的三种编码：因果回路、存量流量与混合模型",
+    "source": "CDC Preventing Chronic Disease · Ying Wang、Bo Hu 等",
+    "source_url": "https://www.cdc.gov/pcd/issues/2021/pdf/21_0175.pdf",
+    "status": "allowed",
+    "license": "PCD Open Access Statement（允许复制和分发）",
+    "license_url": "https://www.cdc.gov/pcd/about_the_journal/editorial_policy.htm",
+    "reason": "PCD期刊明确允许复制、分发全文；该图由论文作者绘制，图题未标注第三方版权。公开页须保留作者、原文与来源。"
+  },
+  {
+    "id": "N002",
+    "title": "边的极性与变量变化：用小多图拆开同向和反向影响",
+    "source": "Cascade Institute · Michael Lawrence",
+    "source_url": "https://cascadeinstitute.org/wp-content/uploads/2024/06/Causal-Loop-Diagrams-Handbook-June-27-2024.pdf",
+    "status": "link_only",
+    "license": "保留版权；未核实公开再分发许可",
+    "license_url": "https://cascadeinstitute.org/wp-content/uploads/2024/06/Causal-Loop-Diagrams-Handbook-June-27-2024.pdf",
+    "reason": "官方可下载不等于允许在GitHub或Pages再分发；只公开来源链接，本地原件和页面预览不发布。"
+  },
+  {
+    "id": "N003",
+    "title": "北极反照率：两条强化回路与一条平衡回路共存",
+    "source": "Cascade Institute · Michael Lawrence",
+    "source_url": "https://cascadeinstitute.org/wp-content/uploads/2024/06/Causal-Loop-Diagrams-Handbook-June-27-2024.pdf",
+    "status": "link_only",
+    "license": "保留版权；未核实公开再分发许可",
+    "license_url": "https://cascadeinstitute.org/wp-content/uploads/2024/06/Causal-Loop-Diagrams-Handbook-June-27-2024.pdf",
+    "reason": "官方可下载不等于允许在GitHub或Pages再分发；只公开来源链接，本地原件和页面预览不发布。"
+  },
+  {
+    "id": "N005",
+    "title": "资源与竞争机制×时间行为：四种原型的双页对读",
+    "source": "The Systems Thinker / Pegasus · Daniel H. Kim、Virginia Anderson",
+    "source_url": "https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-Basics-WB002E.pdf",
+    "status": "link_only",
+    "license": "保留版权；未核实公开再分发许可",
+    "license_url": "https://thesystemsthinker.com/wp-content/uploads/2016/03/Systems-Archetypes-Basics-WB002E.pdf",
+    "reason": "官方可下载不等于允许在GitHub或Pages再分发；只公开来源链接，本地原件和页面预览不发布。"
+  },
+  {
+    "id": "N006",
+    "title": "浴缸存量：流入流出、累计量与响应延迟",
+    "source": "Climate Interactive · En-ROADS User Guide",
+    "source_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/guide/background.html",
+    "status": "allowed",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "license_url": "https://docs.climateinteractive.org/projects/en-roads/en/latest/guide/background.html",
+    "reason": "官方文档页脚明确将这些材料以CCBY4.0发布；公开时保留作者和页面来源、许可链接，标注预览格式转换。"
+  },
+  {
+    "id": "V001",
+    "title": "流量弦图：环形群组间的双向迁移",
+    "source": "Yan Holtz · Data to Viz",
+    "source_url": "https://www.data-to-viz.com/graph/chord.html",
+    "status": "allowed",
+    "license": "MIT",
+    "license_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "reason": "作者项目的说明图/代码生成图，按仓库 MIT 许可保留版权、许可全文和来源；未包含网页引用的第三方插图。",
+    "attribution": "Yan Holtz · Data to Viz；原始来源：https://www.data-to-viz.com/graph/chord.html",
+    "license_copy_href": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt"
+  },
+  {
+    "id": "V002",
+    "title": "平行坐标：多指标轮廓与目标群体高亮",
+    "source": "Yan Holtz · Data to Viz",
+    "source_url": "https://www.data-to-viz.com/graph/parallel.html",
+    "status": "allowed",
+    "license": "MIT",
+    "license_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "reason": "作者项目的说明图/代码生成图，按仓库 MIT 许可保留版权、许可全文和来源；未包含网页引用的第三方插图。",
+    "attribution": "Yan Holtz · Data to Viz；原始来源：https://www.data-to-viz.com/graph/parallel.html",
+    "license_copy_href": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt"
+  },
+  {
+    "id": "V003",
+    "title": "山脊密度图：月份序列中的分布迁移",
+    "source": "Yan Holtz · Data to Viz",
+    "source_url": "https://www.data-to-viz.com/graph/ridgeline.html",
+    "status": "allowed",
+    "license": "MIT",
+    "license_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "reason": "作者项目的说明图/代码生成图，按仓库 MIT 许可保留版权、许可全文和来源；未包含网页引用的第三方插图。",
+    "attribution": "Yan Holtz · Data to Viz；原始来源：https://www.data-to-viz.com/graph/ridgeline.html",
+    "license_copy_href": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt"
+  },
+  {
+    "id": "V005",
+    "title": "二维密度的六种表达：同一批点如何减少遮挡",
+    "source": "Yan Holtz · Data to Viz",
+    "source_url": "https://www.data-to-viz.com/graph/density2d.html",
+    "status": "allowed",
+    "license": "MIT",
+    "license_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "reason": "主图为 Data-to-Viz density2d 页面所附 Matplotlib/SciPy 示例的六联图，附图为同项目 hexbinmap 页面中的分箱应用图；两图均按作者 data_to_viz 仓库 MIT 许可保留 Copyright (c) 2017 Holtz Yan、完整许可与对应来源。",
+    "attribution": "Yan Holtz · Data to Viz；Copyright (c) 2017 Holtz Yan。主图来源：https://www.data-to-viz.com/graph/density2d.html；附图来源：https://www.data-to-viz.com/graph/hexbinmap.html。原图内容未改动，预览仅等比缩小。",
+    "license_copy_href": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt"
+  },
+  {
+    "id": "V006",
+    "title": "散点矩阵：成对关系与各变量分布同页对齐",
+    "source": "Yan Holtz · Data to Viz",
+    "source_url": "https://www.data-to-viz.com/graph/correlogram.html",
+    "status": "allowed",
+    "license": "MIT",
+    "license_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "reason": "作者项目的说明图/代码生成图，按仓库 MIT 许可保留版权、许可全文和来源；未包含网页引用的第三方插图。",
+    "attribution": "Yan Holtz · Data to Viz；原始来源：https://www.data-to-viz.com/graph/correlogram.html",
+    "license_copy_href": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt"
+  },
+  {
+    "id": "V007",
+    "title": "UpSet：多集合交集的数量排序与成员矩阵",
+    "source": "Alexander Lex / Visualization Design Lab · UpSet",
+    "source_url": "https://upset.app/",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://upset.app/",
+    "reason": "官网页脚明确全站内容 CC BY 4.0（链接 https://creativecommons.org/licenses/by/4.0/legalcode）；保留作者、原始来源和许可链接，注明仅缩放预览。",
+    "attribution": "Alexander Lex / Visualization Design Lab · UpSet；原始来源：https://upset.app/"
+  },
+  {
+    "id": "V008",
+    "title": "子弹图设计规范：实际值、目标与绩效区间",
+    "source": "Stephen Few · Perceptual Edge",
+    "source_url": "https://perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pdf",
+    "status": "link_only",
+    "license": "Copyright © Stephen Few 2006–2013；未发现开放转载许可",
+    "license_url": "https://perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pdf",
+    "reason": "PDF 明示版权，公开站点仅放来源链接；本地保存用于个人研读。",
+    "attribution": "Stephen Few · Perceptual Edge；原始来源：https://perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pdf"
+  },
+  {
+    "id": "V009",
+    "title": "泰特艺术家藏品树图：面积、类别与阅读说明",
+    "source": "Yobanny Sámano · The R Graph Gallery",
+    "source_url": "https://r-graph-gallery.com/web-treemap-with-annotations-labels-and-colors.html",
+    "status": "link_only",
+    "license": "作者公开案例；该贡献图的独立转载许可未核实",
+    "license_url": "https://r-graph-gallery.com/web-treemap-with-annotations-labels-and-colors.html",
+    "reason": "页面明确设计署名 Yobanny Sámano。未将站点代码许可自动套用到贡献图，公开图库只提供来源链接。",
+    "attribution": "Yobanny Sámano · The R Graph Gallery；原始来源：https://r-graph-gallery.com/web-treemap-with-annotations-labels-and-colors.html"
+  },
+  {
+    "id": "V010",
+    "title": "人口变形地图：地理轮廓与数量权重的取舍",
+    "source": "Yan Holtz · Data to Viz",
+    "source_url": "https://www.data-to-viz.com/graph/cartogram.html",
+    "status": "allowed",
+    "license": "MIT",
+    "license_url": "https://github.com/holtzy/data_to_viz/blob/master/LICENSE",
+    "reason": "作者项目的说明图/代码生成图，按仓库 MIT 许可保留版权、许可全文和来源；未包含网页引用的第三方插图。",
+    "attribution": "Yan Holtz · Data to Viz；原始来源：https://www.data-to-viz.com/graph/cartogram.html",
+    "license_copy_href": "assets/9444c65a77928a32-Data-to-Viz-MIT-LICENSE.txt"
+  },
+  {
+    "id": "V011",
+    "title": "能源桑基图：来源、转换、用途与损耗的全量平衡",
+    "source": "Lawrence Livermore National Laboratory（LLNL）",
+    "source_url": "https://flowcharts.llnl.gov/",
+    "status": "allowed",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.llnl.gov/copyright-reuse",
+    "reason": "LLNL 许可允许非商业再利用，须署名 LLNL、链接许可并说明更改；改编作品需相同许可。此处原 PDF 不改动，仅等比渲染预览；原图脚注还要求同时注明美国能源部。",
+    "attribution": "Lawrence Livermore National Laboratory（LLNL）；原始来源：https://flowcharts.llnl.gov/"
+  },
+  {
+    "id": "Q001",
+    "title": "论证主线与推理依据：证据、结论、限定和反驳",
+    "source": "Purdue University · OWL",
+    "source_url": "https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html",
+    "status": "link_only",
+    "license": "保留版权；未发现明确再分发许可",
+    "license_url": "https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html",
+    "reason": "未发现该原图开放转载授权；公开版保留来源链接与整理者的构图分析。"
+  },
+  {
+    "id": "K001",
+    "title": "Fabric 现代数仓：三层数据主线与底部共享编排",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/dataops-mdw",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Fabric 现代数仓：三层数据主线与底部共享编排。来源：https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/dataops-mdw。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K003",
+    "title": "CQRS：共享模型、分离模型与分离存储对照",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — CQRS：共享模型、分离模型与分离存储对照。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K004",
+    "title": "事件溯源：命令、事件总线与三类投影",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 事件溯源：命令、事件总线与三类投影。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K005",
+    "title": "Saga 协作：事件参与者与中心编排者对照",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/saga",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Saga 协作：事件参与者与中心编排者对照。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/saga。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K006",
+    "title": "流处理：双数据源汇合与独立监控支路",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/data/stream-processing-stream-analytics",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 流处理：双数据源汇合与独立监控支路。来源：https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/data/stream-processing-stream-analytics。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K007",
+    "title": "企业集成：API、编排与事件总线的多层连接",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/integration/queues-events",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 企业集成：API、编排与事件总线的多层连接。来源：https://learn.microsoft.com/en-us/azure/architecture/example-scenario/integration/queues-events。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K008",
+    "title": "基础企业集成：业务请求与接口发布双视角",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/basic-enterprise-integration",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 基础企业集成：业务请求与接口发布双视角。来源：https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/basic-enterprise-integration。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K009",
+    "title": "混合文件服务：本地与云端边界中的多种流量",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-files-private",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 混合文件服务：本地与云端边界中的多种流量。来源：https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-files-private。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K010",
+    "title": "多层应用容灾：双地域镜像与两种可用性布局",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/infrastructure/multi-tier-app-disaster-recovery",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 多层应用容灾：双地域镜像与两种可用性布局。来源：https://learn.microsoft.com/en-us/azure/architecture/example-scenario/infrastructure/multi-tier-app-disaster-recovery。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K011",
+    "title": "桌面容灾：共享身份顶栏与跨地域资源矩阵",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 桌面容灾：共享身份顶栏与跨地域资源矩阵。来源：https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K012",
+    "title": "Fabric 部署层级：租户、容量、工作区与数据底座",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-deployment-patterns",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Fabric 部署层级：租户、容量、工作区与数据底座。来源：https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-deployment-patterns。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K013",
+    "title": "虚拟机基线：职责列与可用区行的交叉布局",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 虚拟机基线：职责列与可用区行的交叉布局。来源：https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K014",
+    "title": "Hub-Spoke：中心共享网络与生产非生产分区",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Hub-Spoke：中心共享网络与生产非生产分区。来源：https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K015",
+    "title": "AKS 基线：Hub、Spoke、子网与集群的嵌套边界",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — AKS 基线：Hub、Spoke、子网与集群的嵌套边界。来源：https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K016",
+    "title": "微服务平台：运行主线与交付、身份、观测外围",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 微服务平台：运行主线与交付、身份、观测外围。来源：https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K017",
+    "title": "Claim Check：消息令牌主路与大载荷旁路",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Claim Check：消息令牌主路与大载荷旁路。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K018",
+    "title": "熔断器：三状态条件转移与实施场景",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 熔断器：三状态条件转移与实施场景。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K019",
+    "title": "渐进替换：固定骨架中的四阶段迁移",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 渐进替换：固定骨架中的四阶段迁移。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K020",
+    "title": "Fabric 多容量部署：横向工作区与共同数据层",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-deployment-patterns",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — Fabric 多容量部署：横向工作区与共同数据层。来源：https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-deployment-patterns。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K021",
+    "title": "补偿事务：正向步骤与反向补偿的双轨链",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 补偿事务：正向步骤与反向补偿的双轨链。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K022",
+    "title": "数据分片：映射表、并列分片与应用访问",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 数据分片：映射表、并列分片与应用访问。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K023",
+    "title": "队列削峰：汇入、缓冲与速率变化的组合图",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — 队列削峰：汇入、缓冲与速率变化的组合图。来源：https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "K024",
+    "title": "主数据认证：源系统、质量流水线与消费系统",
+    "source": "Microsoft Learn · Purview",
+    "source_url": "https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-semarchy",
+    "status": "link_only",
+    "license": "第三方图片保留版权，未取得再分发许可",
+    "license_url": "https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-semarchy",
+    "reason": "Microsoft Purview 页面包含 Semarchy / Profisee 第三方架构图，没有核实该图的独立公开再分发许可；不得套用另一个 architecture-center 仓库的 CC 许可。原图还明确标注 Confidential / Do not distribute or share without written consent from Semarchy，必须排除公开图像。",
+    "attribution": "Semarchy — 主数据认证：源系统、质量流水线与消费系统。来源：https://learn.microsoft.com/en-us/purview/data-governance-master-data-management-semarchy。第三方图片保留版权，未取得再分发许可。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "K027",
+    "title": "混合环境：相同应用骨架跨开发与生产对照",
+    "source": "Google Cloud Architecture Center",
+    "source_url": "https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns-and-practices/environment-hybrid-pattern",
+    "status": "link_only",
+    "license": "页面正文 CC BY 4.0；图像授权未单独确认",
+    "license_url": "https://developers.google.com/terms/site-policies",
+    "reason": "原页面底部有 CC BY 4.0 通用通知，但其链接的 Site Policies 对图像、音视频及外部内容列出许可例外；现有这幅具体图未找到单独授权说明。本次保守仅发布来源链接，不能仅凭页面正文许可推导媒体再分发权。",
+    "attribution": "Google Cloud — 混合环境：相同应用骨架跨开发与生产对照。来源：https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns-and-practices/environment-hybrid-pattern。页面正文 CC BY 4.0；图像授权未单独确认。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "K028",
+    "title": "分层混合云：云端并行前端与本地共享数据库",
+    "source": "Google Cloud Architecture Center",
+    "source_url": "https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns-and-practices/tiered-hybrid-pattern",
+    "status": "link_only",
+    "license": "页面正文 CC BY 4.0；图像授权未单独确认",
+    "license_url": "https://developers.google.com/terms/site-policies",
+    "reason": "原页面底部有 CC BY 4.0 通用通知，但其链接的 Site Policies 对图像、音视频及外部内容列出许可例外；现有这幅具体图未找到单独授权说明。本次保守仅发布来源链接，不能仅凭页面正文许可推导媒体再分发权。",
+    "attribution": "Google Cloud — 分层混合云：云端并行前端与本地共享数据库。来源：https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns-and-practices/tiered-hybrid-pattern。页面正文 CC BY 4.0；图像授权未单独确认。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "K029",
+    "title": "混合云规划：目标确认到方案展开的主从流程",
+    "source": "Google Cloud Architecture Center",
+    "source_url": "https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns/strategy",
+    "status": "link_only",
+    "license": "页面正文 CC BY 4.0；图像授权未单独确认",
+    "license_url": "https://developers.google.com/terms/site-policies",
+    "reason": "原页面底部有 CC BY 4.0 通用通知，但其链接的 Site Policies 对图像、音视频及外部内容列出许可例外；现有这幅具体图未找到单独授权说明。本次保守仅发布来源链接，不能仅凭页面正文许可推导媒体再分发权。",
+    "attribution": "Google Cloud — 混合云规划：目标确认到方案展开的主从流程。来源：https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns/strategy。页面正文 CC BY 4.0；图像授权未单独确认。公开版仅列来源，不转载本地图像。",
+    "checked_date": "2026-10-23"
+  },
+  {
+    "id": "K031",
+    "title": "GitOps：仓库拉取主路与受限直连旁路",
+    "source": "Microsoft Azure Architecture Center",
+    "source_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks",
+    "status": "allowed",
+    "license": "CC BY 4.0",
+    "license_url": "https://github.com/MicrosoftDocs/architecture-center/blob/main/LICENSE",
+    "reason": "MicrosoftDocs/architecture-center 仓库采用 CC BY 4.0；已检索核对库内对应 SVG/PNG 或其正文引用。仅公开仓库内容图及其完整预览。外部 AzureEdge 下载的 VSDX 未发现明确再分发许可，不在本次 allowed_assets 中；商标不因 CC 许可而授权独立使用。",
+    "attribution": "Microsoft / Azure Architecture Center — GitOps：仓库拉取主路与受限直连旁路。来源：https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks。CC BY 4.0。原图内容未修改；缩略图仅作尺寸/格式适配。 许可全文：https://creativecommons.org/licenses/by/4.0/",
+    "checked_date": "2026-10-23",
+    "conditions": [
+      "保留 Microsoft 署名、原页面链接和 CC BY 4.0 许可链接",
+      "不单独提取商标或暗示 Microsoft 背书",
+      "不得将未列入 allowed_assets 的外部 VSDX 一并发布"
+    ],
+    "license_canonical_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "U001",
+    "title": "条件片段套循环：在生命线上组织多种交互情形",
+    "source": "PlantUML 官方语言文档",
+    "source_url": "https://plantuml.com/sequence-diagram",
+    "status": "link_only",
+    "license": "保留版权；未发现官网示例再分发许可",
+    "license_url": "https://plantuml.com/de/faq",
+    "reason": "PlantUML FAQ 明确官网 documentation/examples 有版权；工具 GPL/LGPL/MIT 等许可及用户自行生成图片的许可不等于官网教学例的转载许可。仅本地学习，公开版只列来源。"
+  },
+  {
+    "id": "U003",
+    "title": "共享时间轴上的状态波形与带延迟的消息",
+    "source": "PlantUML 官方语言文档",
+    "source_url": "https://plantuml.com/timing-diagram",
+    "status": "link_only",
+    "license": "保留版权；未发现官网示例再分发许可",
+    "license_url": "https://plantuml.com/de/faq",
+    "reason": "PlantUML FAQ 明确官网 documentation/examples 有版权；工具 GPL/LGPL/MIT 等许可及用户自行生成图片的许可不等于官网教学例的转载许可。仅本地学习，公开版只列来源。"
+  },
+  {
+    "id": "U004",
+    "title": "正交状态区：一个对象同时拥有三个独立状态维度",
+    "source": "PlantUML 官方语言文档",
+    "source_url": "https://plantuml.com/state-diagram",
+    "status": "link_only",
+    "license": "保留版权；未发现官网示例再分发许可",
+    "license_url": "https://plantuml.com/de/faq",
+    "reason": "PlantUML FAQ 明确官网 documentation/examples 有版权；工具 GPL/LGPL/MIT 等许可及用户自行生成图片的许可不等于官网教学例的转载许可。仅本地学习，公开版只列来源。"
+  },
+  {
+    "id": "U006",
+    "title": "披萨订单协作：独立流程池之间的消息契约",
+    "source": "Camunda 官方 BPMN 参考",
+    "source_url": "https://camunda.com/bpmn/reference/",
+    "status": "link_only",
+    "license": "保留版权；未发现官网示例再分发许可",
+    "license_url": "https://camunda.com/bpmn/reference/",
+    "reason": "Camunda 官网页脚保留全部版权，未发现这幅官网示例图的开放转载许可。仅本地学习，公开版只列来源。"
+  },
+  {
+    "id": "U007",
+    "title": "弱结构流程：任务集合中只约束必要的先后",
+    "source": "Camunda 官方 BPMN 参考",
+    "source_url": "https://camunda.com/bpmn/reference/",
+    "status": "link_only",
+    "license": "保留版权；未发现官网示例再分发许可",
+    "license_url": "https://camunda.com/bpmn/reference/",
+    "reason": "Camunda 官网页脚保留全部版权，未发现这幅官网示例图的开放转载许可。仅本地学习，公开版只列来源。"
+  },
+  {
+    "id": "U011",
+    "title": "决策需求图：区分输入数据、派生决策与知识依据",
+    "source": "Camunda docs 官方仓库",
+    "source_url": "https://github.com/camunda/camunda-docs/blob/b2f73419640e329120a1482aec4e5134811533e3/docs/components/modeler/dmn/decision-requirements-graph.md",
+    "status": "allowed",
+    "license": "Creative Commons 署名-相同方式共享许可（仓库 LICENSE.txt 原文未标版本）",
+    "license_url": "https://github.com/camunda/camunda-docs/blob/b2f73419640e329120a1482aec4e5134811533e3/LICENSE.txt",
+    "reason": "来自 camunda/camunda-docs 同一提交的官方图片；仓库 LICENSE.txt 第 3 节授权复制和分发，第 4 节要求署名及附许可。原图未改动，白底预览为格式适配，保留来源和完整许可。"
+  }
+]
