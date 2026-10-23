@@ -146,11 +146,12 @@ const moreObserver=typeof IntersectionObserver!=='undefined'?new IntersectionObs
 moreObserver?.observe($('#loadSentinel'));
 window.addEventListener('resize',scheduleMasonry);
 function updateCompare(){$('#comparebar').hidden=selected.size===0;$('#comparecount').textContent='已选 '+selected.size+' / 3';$('#compareBtn').disabled=selected.size<2}
+function discardImages(images){for(const img of images){imageObserver?.unobserve(img);imageLoads.get(img)?.();img.onload=img.onerror=null;img.removeAttribute('srcset');img.removeAttribute('sizes');img.src=BLANK_IMAGE}}
 function openModal(content){
   if(!$('#modal').classList.contains('open'))lastFocus=document.activeElement;
-  currentDetailId=null;$('#dialogContent').innerHTML=content;$('#modal').classList.add('open');document.body.style.overflow='hidden';$('#closeModal').focus();$('#modal').scrollTop=0;
+  currentDetailId=null;const previous=[...$('#dialogContent').querySelectorAll('img')];$('#dialogContent').innerHTML=content;discardImages(previous);$('#modal').classList.add('open');document.body.style.overflow='hidden';$('#closeModal').focus();$('#modal').scrollTop=0;
 }
-function closeModal(){detailGeneration++;$('#modal').classList.remove('open');document.body.style.overflow='';currentDetailId=null;if(lastFocus&&lastFocus.isConnected)lastFocus.focus()}
+function closeModal(){detailGeneration++;const previous=[...$('#dialogContent').querySelectorAll('img')];$('#dialogContent').replaceChildren();discardImages(previous);$('#modal').classList.remove('open');document.body.style.overflow='';currentDetailId=null;if(lastFocus&&lastFocus.isConnected)lastFocus.focus()}
 async function openDetail(d,sequence=visibleItems){
   const token=++detailGeneration;detailItems=sequence.some(x=>x.id===d.id)?sequence:[d];const at=detailItems.findIndex(x=>x.id===d.id);
   openModal('<div class="detail-nav"><button class="secondary" id="prevDetail" '+(at===0?'disabled':'')+'>← 上一张</button><span>'+(at+1)+' / '+detailItems.length+'</span><button class="secondary" id="nextDetail" '+(at===detailItems.length-1?'disabled':'')+'>下一张 →</button></div><h2 id="dialogtitle">'+esc(d.title)+'</h2><div class="detail-loading">正在载入这张图的分析与大图…</div>');currentDetailId=d.id;
