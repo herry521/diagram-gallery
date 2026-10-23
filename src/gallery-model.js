@@ -18,7 +18,7 @@ function selectItems(items,f,favoriteIds=[],latestBatch=''){
     (f.batch==='all'||d.batch===f.batch)&&
     (f.access==='all'||(f.access==='editable'?d.downloaded_editable:f.access==='ppt'?d.downloaded_ppt:f.access==='saved'?d.downloaded_asset:!d.downloaded_editable))&&
     (f.mode==='all'||(f.mode==='new'&&d.batch===latestBatch)||(f.mode==='featured'&&d.featured)||(f.mode==='favorites'&&favorites.has(d.id)))&&
-    (!q||[d.id,d.title,d.source,d.relation,d.composition,d.recipe,d.classification_note,d.tags.join(' '),d.task_labels.join(' '),d.layout_labels.join(' '),d.context_labels.join(' ')].join(' ').toLowerCase().includes(q))
+    (!q||[d.id,d.title,d.source,d.relation,d.composition,d.recipe,d.classification_note,d.search_text,(d.tags||[]).join(' '),(d.task_labels||[]).join(' '),(d.layout_labels||[]).join(' '),(d.context_labels||[]).join(' ')].join(' ').toLowerCase().includes(q))
   );
   result.sort((a,b)=>f.sort==='id'?a.id.localeCompare(b.id):Number(b.featured)-Number(a.featured)||a.rank-b.rank||a.id.localeCompare(b.id));
   return f.sort==='diverse'?diversified(result):result;

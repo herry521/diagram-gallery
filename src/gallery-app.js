@@ -1,12 +1,51 @@
 const LIB=JSON.parse(document.getElementById('library-data').textContent),DATA=LIB.items,TAX=LIB.taxonomy,TOURS=LIB.learning_paths,byId=Object.fromEntries(DATA.map(x=>[x.id,x]));
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names=Object.fromEntries(['tasks','layouts','contexts','roles'].map(k=>[k,Object.fromEntries(TAX[k].map(x=>[x.id,x.label]))]));
+DATA.forEach(d=>{d.task_labels??=d.tasks.map(k=>names.tasks[k]);d.layout_labels??=d.layouts.map(k=>names.layouts[k]);d.context_labels??=d.contexts.map(k=>names.contexts[k]);d.role_label??=names.roles[d.role];d.assets??=[];d.tags??=[];});
 if(LIB.public_site)DEFAULT_FILTERS.visibility='allowed';
 let filters={...DEFAULT_FILTERS},view='purpose',tourId='cdp',favorites=new Set(),selected=new Set(),visibleItems=[],detailItems=[],currentDetailId=null,lastFocus=null,toastTimer;
 try{const stored=JSON.parse(localStorage.getItem('composition-favorites-v1')||'[]');if(Array.isArray(stored))favorites=new Set(stored.filter(id=>byId[id]))}catch(e){}
 function toast(s){clearTimeout(toastTimer);$('#toast').textContent=s;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,2600)}
 function link(h,t){return '<a href="'+esc(h)+'" target="_blank" rel="noopener">'+esc(t)+'</a>'}
-function imageHTML(d,cls=''){return d.preview?'<img class="'+cls+'" src="'+esc(d.preview)+'" alt="'+esc(d.id+' '+d.title)+'" loading="lazy">':'<div class="noimage">'+skeleton(d.layouts[0])+'<b>布局示意 · 原图未发布</b><br><span class="subnote">此条保留构图分析与来源入口</span></div>'}
+const BLANK_IMAGE='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=',PAGE_SIZE=12,MAX_IMAGE_REQUESTS=3;
+let renderedCount=0,detailGeneration=0,masonryFrame=0,offlineDetailsPromise=null;
+const detailCache=new Map(),imageQueue=[],imageLoads=new Map();
+function loadOfflineDetails(){
+  if(!offlineDetailsPromise)offlineDetailsPromise=new Promise((resolve,reject)=>{
+    const script=document.createElement('script');let timer;
+    const fail=()=>{clearTimeout(timer);script.remove();offlineDetailsPromise=null;reject(new Error('离线详情未能读取，请保留完整 data 文件夹并重试'))};
+    script.src=new URL(LIB.offline_detail_script,document.baseURI).href;
+    script.onload=()=>{const data=window.__galleryOfflineDetails;if(!data||typeof data!=='object'||!Object.keys(data).length){fail();return}clearTimeout(timer);resolve(data)};
+    script.onerror=fail;timer=setTimeout(fail,20000);document.head.append(script);
+  });return offlineDetailsPromise;
+}
+function loadDetail(d){
+  if(!d.detail_href)return Promise.resolve(d);
+  if(!detailCache.has(d.id))detailCache.set(d.id,(async()=>{
+    let full;
+    if(location.protocol==='file:')full=(await loadOfflineDetails())[d.id];
+    else{const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),30000);try{const response=await fetch(new URL(d.detail_href,document.baseURI),{credentials:'omit',signal:controller.signal});if(!response.ok)throw new Error('详情暂时无法加载（'+response.status+'）');full=await response.json()}catch(e){if(e.name==='AbortError')throw new Error('详情加载超时，请重试');throw e}finally{clearTimeout(timer)}}
+    if(!full||full.id!==d.id)throw new Error('详情文件不匹配');return {...d,...full};
+  })().catch(e=>{detailCache.delete(d.id);throw e}));return detailCache.get(d.id);
+}
+function imageHTML(d,cls='',full=false){
+  if(!d.preview)return '<div class="noimage">'+skeleton(d.layouts[0])+'<b>布局示意 · 原图未发布</b><br><span class="subnote">此条保留构图分析与来源入口</span></div>';
+  const w=d.preview_width||960,h=d.preview_height||600,small=d.thumbnail||d.preview,large=d.thumbnail_2x;
+  const srcset=large&&large!==small?' data-srcset="'+esc(small+' '+(d.thumbnail_width||480)+'w, '+large+' '+(d.thumbnail_2x_width||960)+'w')+'"':'';
+  return '<span class="image-frame"><img class="'+cls+'" src="'+(full?esc(d.preview):BLANK_IMAGE)+'" '+(full?'fetchpriority="high"':'data-src="'+esc(small)+'"'+srcset+' sizes="(max-width:760px) calc(100vw - 64px), (max-width:1200px) calc((100vw - 320px) / 2), 360px"')+' width="'+w+'" height="'+h+'" style="aspect-ratio:'+w+'/'+h+'" alt="'+esc(d.id+' '+d.title)+'" decoding="async" '+(full?'data-full-image':'data-thumbnail')+'><span class="image-hint">'+(full?'大图加载中':'缩略图加载中')+'</span></span>';
+}
+function scheduleMasonry(){if(!masonryFrame)masonryFrame=requestAnimationFrame(()=>{masonryFrame=0;const grid=$('#grid'),s=getComputedStyle(grid),row=parseFloat(s.gridAutoRows)||8,gap=parseFloat(s.rowGap)||16;grid.querySelectorAll('.card').forEach(c=>{const n=Math.ceil((c.getBoundingClientRect().height+gap)/(row+gap));if(c.style.gridRowEnd!=='span '+n)c.style.gridRowEnd='span '+n})})}
+const cardResizeObserver=typeof ResizeObserver!=='undefined'?new ResizeObserver(scheduleMasonry):null;
+function finishImage(img,ok){const frame=img.closest('.image-frame');if(frame){frame.classList.toggle('image-error',!ok);frame.classList.remove('image-loading');const hint=frame.querySelector('.image-hint');if(hint){hint.textContent=ok?'':img.hasAttribute('data-full-image')?'大图暂时未加载，可使用下方原图链接':'图片暂时未加载，点开查看详情';hint.hidden=ok}}scheduleMasonry()}
+function pumpImages(){
+  while(imageLoads.size<MAX_IMAGE_REQUESTS&&imageQueue.length){const img=imageQueue.shift();if(!img.isConnected||!img.dataset.src)continue;let done=false;const finish=(ok,abort=false)=>{if(done)return;done=true;clearTimeout(timer);img.onload=img.onerror=null;if(abort){img.removeAttribute('srcset');img.removeAttribute('sizes');img.src=BLANK_IMAGE}imageLoads.delete(img);finishImage(img,ok);pumpImages()};const timer=setTimeout(()=>finish(false,true),45000);imageLoads.set(img,()=>finish(false,true));img.onload=()=>finish(true);img.onerror=()=>finish(false);img.closest('.image-frame')?.classList.add('image-loading');if(img.dataset.srcset)img.srcset=img.dataset.srcset;img.src=img.dataset.src;img.removeAttribute('data-src');img.removeAttribute('data-srcset');if(img.complete&&img.naturalWidth>1)finish(true)}
+}
+const imageObserver=typeof IntersectionObserver!=='undefined'?new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting&&e.target.dataset.src){imageObserver.unobserve(e.target);if(!e.target.dataset.imageQueued){e.target.dataset.imageQueued='1';imageQueue.push(e.target)}}});pumpImages()},{rootMargin:'180px 0px'}):null;
+function activateImages(root=document){
+  for(const [img,cancel] of imageLoads)if(!img.isConnected)cancel()
+  root.querySelectorAll('img[data-src]').forEach(img=>{if(img.dataset.imageQueued)return;if(imageObserver)imageObserver.observe(img);else{img.dataset.imageQueued='1';imageQueue.push(img)}});
+  root.querySelectorAll('img[data-full-image]').forEach(img=>{const done=()=>finishImage(img,img.naturalWidth>1);img.onload=img.onerror=done;if(img.complete)done()});pumpImages();scheduleMasonry();
+}
 function tagsHTML(d){return '<div class="tags">'+d.task_labels.map(t=>'<span class="tag">'+esc(t)+'</span>').join('')+d.layout_labels.map(t=>'<span class="tag layout">'+esc(t)+'</span>').join('')+'</div>'}
 function skeleton(id){
   const r=(x,y,w=22,h=12)=>'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="2"/>',p=d=>'<path d="'+d+'"/>',c=(x,y,z=7)=>'<circle cx="'+x+'" cy="'+y+'" r="'+z+'"/>';
@@ -68,60 +107,81 @@ function renderExplorer(){
     box.innerHTML='<h2 class="section-title">同题换画法：先比较各自强调什么。</h2><p class="section-intro">每组三张，用一个表达问题串起不同构图。素材来自不同场景，借鉴空间安排，业务含义仍需重新核实。</p><div class="tour-tabs">'+TOURS.map((t,i)=>'<button class="pill '+(t.id===tour.id?'active':'')+'" data-tour="'+t.id+'">'+(i+1)+'. '+esc(t.title.split('，')[0].split('：')[0])+'</button>').join('')+'</div><div class="tour-head"><h3>'+esc(tour.title)+'</h3><p>'+esc(tour.question)+'</p><p><b>观察重点：</b>'+esc(tour.lesson)+'</p></div><div class="tour-grid">'+tour.cards.map(c=>{
       const d=byId[c.id];return '<article class="tour-card"><button class="thumb" data-tour-open="'+d.id+'" aria-label="查看 '+esc(d.title)+'">'+imageHTML(d)+'</button><div class="body"><div class="cardmeta">'+d.id+' · '+esc(d.role_label)+'</div><h4>'+esc(c.angle)+'</h4><p>'+esc(c.reason)+'</p>'+tagsHTML(d)+'<button class="secondary" data-tour-open="'+d.id+'">看原图与拆解</button></div></article>'
     }).join('')+'</div><div class="tour-bottom"><button class="primary" id="compareTour">并排对照这三张</button><span class="subnote">点击图片打开大图，左右方向键逐张看。</span></div><div class="aside-note">'+esc(tour.boundary)+'</div>';
-    box.querySelectorAll('[data-tour]').forEach(b=>b.onclick=()=>{tourId=b.dataset.tour;renderExplorer()});
+    box.querySelectorAll('[data-tour]').forEach(b=>b.onclick=()=>{tourId=b.dataset.tour;renderExplorer();activateImages(box)});
     box.querySelectorAll('[data-tour-open]').forEach(b=>b.onclick=()=>openDetail(byId[b.dataset.tourOpen],tour.cards.map(c=>byId[c.id])));
     $('#compareTour').onclick=()=>openCompare(tour.cards.map(c=>byId[c.id]),tour);
   }else if(view==='compound'){
     box.innerHTML='<h2 class="section-title">复杂图，先找主骨架，再看局部结构。</h2><p class="section-intro">复合关系指同时组织两种以上独立关系。文字多、配色多或形状多，本身不等于复合。</p><div class="tour-head"><p><b>第一遍：</b>遮住细节，判断整张图主要沿什么方向阅读。</p><p><b>第二遍：</b>看局部为什么需要另一种骨架，例如主流程里的分解树、泳道中的映射线。</p><p><b>第三遍：</b>找不同结构之间的连接，判断哪些位置或箭头确实有业务含义。</p><button class="secondary" id="compoundTour">看三种复合方式的对照</button></div>';
-    $('#compoundTour').onclick=()=>{view='tours';tourId='composite';render()};
+    $('#compoundTour').onclick=()=>{view='tours';tourId=TOURS.some(t=>t.id==='composite')?'composite':'quantity';render()};
   }
 }
 function cardHTML(d){
   const editable=d.editable_formats.length?(LIB.public_site?'可下载 ':'本地 ')+d.editable_formats.join(' / '):d.preview?'静态参考':'仅来源索引';
-  return '<article class="card"><button class="thumb" data-open="'+d.id+'" aria-label="查看 '+esc(d.title)+'">'+imageHTML(d)+'<span class="kind">'+esc(d.role_label)+(d.confidence==='limited_preview'?' · 仅已见样例':'')+'</span></button><div class="cardbody"><div class="cardmeta">'+d.id+' · '+esc(d.context_labels.join(' / '))+(d.batch===LIB.latest_batch?' · 新增':'')+'</div><h2><button class="titlebutton" data-open="'+d.id+'">'+esc(d.title)+'</button></h2><p class="recipe">'+esc(d.recipe)+'</p>'+tagsHTML(d)+(d.assets.length?'<div class="local-open">'+link(d.assets[0].href,d.assets[0].label)+'</div>':LIB.public_site?'<div class="local-open">'+link(d.source_href,'查看原始来源')+'</div>':'')+'</div><div class="cardfoot"><span class="access">'+esc(editable)+'</span><div class="actions"><button class="iconbtn '+(favorites.has(d.id)?'on':'')+'" data-fav="'+d.id+'" aria-label="'+(favorites.has(d.id)?'取消收藏':'收藏')+' '+esc(d.title)+'">'+(favorites.has(d.id)?'★':'☆')+'</button><label class="comparecheck"><input type="checkbox" aria-label="将 '+esc(d.title)+' 加入对照" data-compare="'+d.id+'" '+(selected.has(d.id)?'checked':'')+'>对照</label></div></div></article>';
+  return '<article class="card" data-item="'+d.id+'"><button class="thumb" data-open="'+d.id+'" aria-label="查看 '+esc(d.title)+'">'+imageHTML(d)+'<span class="kind">'+esc(d.role_label)+(d.confidence==='limited_preview'?' · 仅已见样例':'')+'</span></button><div class="cardbody"><div class="cardmeta">'+d.id+' · '+esc(d.context_labels.join(' / '))+(d.batch===LIB.latest_batch?' · 新增':'')+'</div><h2><button class="titlebutton" data-open="'+d.id+'">'+esc(d.title)+'</button></h2><p class="recipe">'+esc(d.recipe)+'</p>'+tagsHTML(d)+(d.assets.length?'<div class="local-open">'+link(d.assets[0].href,d.assets[0].label)+'</div>':LIB.public_site?'<div class="local-open"><button class="titlebutton" data-open="'+d.id+'">查看来源与分析</button></div>':'')+'</div><div class="cardfoot"><span class="access">'+esc(editable)+'</span><div class="actions"><button class="iconbtn '+(favorites.has(d.id)?'on':'')+'" data-fav="'+d.id+'" aria-label="'+(favorites.has(d.id)?'取消收藏':'收藏')+' '+esc(d.title)+'">'+(favorites.has(d.id)?'★':'☆')+'</button><label class="comparecheck"><input type="checkbox" aria-label="将 '+esc(d.title)+' 加入对照" data-compare="'+d.id+'" '+(selected.has(d.id)?'checked':'')+'>对照</label></div></div></article>';
 }
-function render(){
+function updateLoadStatus(){
+  const more=renderedCount<visibleItems.length;$('#loadMore').hidden=!more;$('#loadStatus').textContent=visibleItems.length?'已呈现 '+renderedCount+' / '+visibleItems.length+' 项'+(more?' · 继续向下滚动，或点击加载更多':' · 当前结果已全部呈现'):'';
+  $('#loadSentinel').hidden=!more||view==='tours';
+}
+function appendCards(manual=false){
+  const before=renderedCount;renderedCount=Math.min(visibleItems.length,renderedCount+PAGE_SIZE);const grid=$('#grid');grid.insertAdjacentHTML('beforeend',visibleItems.slice(before,renderedCount).map(cardHTML).join(''));grid.querySelectorAll('.card').forEach(c=>cardResizeObserver?.observe(c));activateImages(grid);updateLoadStatus();if(manual&&$('#loadMore').hidden)grid.querySelector('[data-item="'+visibleItems[before]?.id+'"] [data-open]')?.focus();
+}
+function render({preserveCount=false}={}){
+  imageObserver?.disconnect();cardResizeObserver?.disconnect();
   document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('active',view===b.dataset.view);b.setAttribute('aria-current',view===b.dataset.view?'page':'false')});
   renderExplorer();visibleItems=currentCandidates();
   $('#resultCount').textContent='当前 '+visibleItems.length+' / '+DATA.length+' 项 · 按单条素材计';
   $('#resultGuide').textContent=filters.sort==='diverse'?'当前按主骨架交替展示：尽量先见到不同排法，再深入同类。':'同一张图可以被多个关系或骨架检索到。';
-  $('#empty').hidden=visibleItems.length>0;$('#grid').innerHTML=visibleItems.map(cardHTML).join('');
-  $('#grid').querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openDetail(byId[b.dataset.open],visibleItems));
-  $('#grid').querySelectorAll('[data-fav]').forEach(b=>b.onclick=()=>{const id=b.dataset.fav;favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem('composition-favorites-v1',JSON.stringify([...favorites]))}catch(e){toast('当前预览器无法保存收藏，可导出清单保留')}render();const target=$('#grid').querySelector('[data-fav="'+id+'"]')||$('#grid').querySelector('[data-fav]')||document.querySelector('[data-mode="favorites"]');target.focus()});
-  $('#grid').querySelectorAll('[data-compare]').forEach(c=>c.onchange=()=>{if(c.checked&&selected.size>=3){c.checked=false;toast('每次最多比较三张');return}c.checked?selected.add(c.dataset.compare):selected.delete(c.dataset.compare);updateCompare()});
+  const keep=preserveCount?renderedCount:PAGE_SIZE;renderedCount=0;$('#empty').hidden=visibleItems.length>0;$('#grid').innerHTML='';while(renderedCount<Math.min(keep,visibleItems.length))appendCards();activateImages();updateLoadStatus();
   document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',filters.mode===b.dataset.mode));
   const labels={task:names.tasks[filters.task],layout:names.layouts[filters.layout],context:names.contexts[filters.context],role:$('#role').selectedOptions[0].textContent,access:$('#access').selectedOptions[0].textContent,batch:filters.batch,q:filters.q,visibility:LIB.public_site&&filters.visibility!=='all'?'本站有原图':''};
   $('#activeFilters').innerHTML=Object.entries(labels).filter(([k,v])=>v&&filters[k]!=='all').map(([k,v])=>'<button class="filterchip" data-remove="'+k+'">'+esc(v)+' ×</button>').join('');
   $('#activeFilters').querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>applyFilters({[b.dataset.remove]:b.dataset.remove==='q'?'':'all'},view));
   updateCompare();
 }
+$('#grid').addEventListener('click',e=>{const open=e.target.closest('[data-open]');if(open){openDetail(byId[open.dataset.open],visibleItems);return}const b=e.target.closest('[data-fav]');if(!b)return;const id=b.dataset.fav;favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem('composition-favorites-v1',JSON.stringify([...favorites]))}catch(e){toast('当前预览器无法保存收藏，可导出清单保留')}if(filters.mode==='favorites'){const at=[...$('#grid').querySelectorAll('[data-fav]')].indexOf(b),y=window.scrollY;render({preserveCount:true});const buttons=[...$('#grid').querySelectorAll('[data-fav]')];(buttons[Math.min(at,buttons.length-1)]||document.querySelector('[data-mode="favorites"]')).focus({preventScroll:true});window.scrollTo(0,y)}else{b.classList.toggle('on',favorites.has(id));b.textContent=favorites.has(id)?'★':'☆';b.setAttribute('aria-label',(favorites.has(id)?'取消收藏':'收藏')+' '+byId[id].title)}});
+$('#grid').addEventListener('change',e=>{const c=e.target.closest('[data-compare]');if(!c)return;if(c.checked&&selected.size>=3){c.checked=false;toast('每次最多比较三张');return}c.checked?selected.add(c.dataset.compare):selected.delete(c.dataset.compare);updateCompare()});
+$('#loadMore').onclick=()=>appendCards(true);
+const moreObserver=typeof IntersectionObserver!=='undefined'?new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)&&view!=='tours'&&renderedCount<visibleItems.length)appendCards()},{rootMargin:'400px 0px'}):null;
+moreObserver?.observe($('#loadSentinel'));
+window.addEventListener('resize',scheduleMasonry);
 function updateCompare(){$('#comparebar').hidden=selected.size===0;$('#comparecount').textContent='已选 '+selected.size+' / 3';$('#compareBtn').disabled=selected.size<2}
 function openModal(content){
   if(!$('#modal').classList.contains('open'))lastFocus=document.activeElement;
   currentDetailId=null;$('#dialogContent').innerHTML=content;$('#modal').classList.add('open');document.body.style.overflow='hidden';$('#closeModal').focus();$('#modal').scrollTop=0;
 }
-function closeModal(){$('#modal').classList.remove('open');document.body.style.overflow='';currentDetailId=null;if(lastFocus&&lastFocus.isConnected)lastFocus.focus()}
-function openDetail(d,sequence=visibleItems){
+function closeModal(){detailGeneration++;$('#modal').classList.remove('open');document.body.style.overflow='';currentDetailId=null;if(lastFocus&&lastFocus.isConnected)lastFocus.focus()}
+async function openDetail(d,sequence=visibleItems){
+  const token=++detailGeneration;detailItems=sequence.some(x=>x.id===d.id)?sequence:[d];const at=detailItems.findIndex(x=>x.id===d.id);
+  openModal('<div class="detail-nav"><button class="secondary" id="prevDetail" '+(at===0?'disabled':'')+'>← 上一张</button><span>'+(at+1)+' / '+detailItems.length+'</span><button class="secondary" id="nextDetail" '+(at===detailItems.length-1?'disabled':'')+'>下一张 →</button></div><h2 id="dialogtitle">'+esc(d.title)+'</h2><div class="detail-loading">正在载入这张图的分析与大图…</div>');currentDetailId=d.id;
+  $('#prevDetail').onclick=()=>stepDetail(-1);$('#nextDetail').onclick=()=>stepDetail(1);
+  try{const full=await loadDetail(d);if(token!==detailGeneration||!$('#modal').classList.contains('open'))return;renderDetail(full,sequence)}catch(e){if(token!==detailGeneration||!$('#modal').classList.contains('open'))return;$('#dialogContent').querySelector('.detail-loading')?.remove();$('#dialogContent').insertAdjacentHTML('beforeend','<div class="aside-note">'+esc(e.message)+' <button class="secondary" id="retryDetail">重试</button> '+link('静态总览.html#item-'+d.id,'查看静态详情')+'</div>');$('#retryDetail').onclick=()=>openDetail(d,sequence);toast('详情未加载，可重试或打开静态总览')}
+}
+function renderDetail(d,sequence=visibleItems){
   detailItems=sequence.some(x=>x.id===d.id)?sequence:[d];const at=detailItems.findIndex(x=>x.id===d.id),alts=alternativesFor(d,LIB.public_site?DATA.filter(x=>x.publication?.status==='allowed'):DATA);
   const more=d.more_previews.map(p=>link(p.href,p.label)).join('');
-  let html='<div class="detail-nav"><button class="secondary" id="prevDetail" '+(at===0?'disabled':'')+'>← 上一张</button><span>'+(at+1)+' / '+detailItems.length+' · 左右方向键</span><button class="secondary" id="nextDetail" '+(at===detailItems.length-1?'disabled':'')+'>下一张 →</button></div><div class="cardmeta">'+d.id+' · '+esc(d.role_label)+' · '+esc(d.context_labels.join(' / '))+'</div><h2 id="dialogtitle">'+esc(d.title)+'</h2><div class="detail-top"><div>'+imageHTML(d,'large-img')+'<div class="detaillinks">'+(d.preview?link(d.preview,'打开原比例预览'):link(d.source_href,'到原始来源查看图像'))+more+'</div>'+tagsHTML(d)+'<div class="recipe-box"><b>主骨架怎样容纳局部结构</b>'+esc(d.recipe)+'</div><div class="detailsource">分类依据：'+esc(d.classification_note)+(d.confidence==='limited_preview'?'<br>只按已看到的套装样例归类，不推断未查看页面。':'')+'</div></div><div class="detailtext"><dl><dt>图中实际表达的关系</dt><dd>'+esc(d.relation)+'</dd><dt>可以借鉴的空间安排</dt><dd>'+esc(d.composition)+'</dd><dt>迁移时需要注意</dt><dd>'+esc(d.caveat)+'</dd><dt>适用场景</dt><dd>'+esc(Array.isArray(d.use_cases)?d.use_cases.join('；'):d.use_cases)+'</dd><dt>文件与访问</dt><dd>'+esc(d.format)+'<br>'+esc(d.access)+'</dd></dl><div class="detaillinks">'+d.assets.map(a=>link(a.href,a.label)).join('')+'</div>'+(d.archive_assets?.length?'<div class="detaillinks">'+d.archive_assets.map(a=>link(a.href,a.label)).join('')+'</div>':'')+'</div></div>';
+  let html='<div class="detail-nav"><button class="secondary" id="prevDetail" '+(at===0?'disabled':'')+'>← 上一张</button><span>'+(at+1)+' / '+detailItems.length+' · 左右方向键</span><button class="secondary" id="nextDetail" '+(at===detailItems.length-1?'disabled':'')+'>下一张 →</button></div><div class="cardmeta">'+d.id+' · '+esc(d.role_label)+' · '+esc(d.context_labels.join(' / '))+'</div><h2 id="dialogtitle">'+esc(d.title)+'</h2><div class="detail-top"><div>'+imageHTML(d,'large-img',true)+'<div class="detaillinks">'+(d.preview?link(d.preview,'打开原比例预览'):link(d.source_href,'到原始来源查看图像'))+more+'</div>'+tagsHTML(d)+'<div class="recipe-box"><b>主骨架怎样容纳局部结构</b>'+esc(d.recipe)+'</div><div class="detailsource">分类依据：'+esc(d.classification_note)+(d.confidence==='limited_preview'?'<br>只按已看到的套装样例归类，不推断未查看页面。':'')+'</div></div><div class="detailtext"><dl><dt>图中实际表达的关系</dt><dd>'+esc(d.relation)+'</dd><dt>可以借鉴的空间安排</dt><dd>'+esc(d.composition)+'</dd><dt>迁移时需要注意</dt><dd>'+esc(d.caveat)+'</dd><dt>适用场景</dt><dd>'+esc(Array.isArray(d.use_cases)?d.use_cases.join('；'):d.use_cases)+'</dd><dt>文件与访问</dt><dd>'+esc(d.format)+'<br>'+esc(d.access)+'</dd></dl><div class="detaillinks">'+d.assets.map(a=>link(a.href,a.label)).join('')+'</div>'+(d.archive_assets?.length?'<div class="detaillinks">'+d.archive_assets.map(a=>link(a.href,a.label)).join('')+'</div>':'')+'</div></div>';
   if(d.novelty)html+='<div class="recipe-box"><b>本轮为什么收录：与旧库的差别</b>'+esc(d.novelty.difference)+'</div>';
   if(LIB.public_site&&d.publication)html+='<div class="aside-note">公开状态：'+esc(d.publication.status==='allowed'?'已按许可附原图与文件':'仅保留来源入口')+'。'+esc(d.publication.reason||'')+'</div>';
   if(alts.length)html+='<h3>也表达“'+esc(names.tasks[d.tasks[0]])+'”，换一种主骨架</h3><p class="subnote">依据关系标签推荐，优先同领域与精选项；这些图的业务含义并不等价。</p><div class="related-grid">'+alts.map(x=>'<button class="related-card" data-related="'+x.id+'">'+imageHTML(x)+'<strong>'+esc(x.id+' · '+x.title)+'</strong><small>'+esc(x.layout_labels.join(' + '))+'</small></button>').join('')+'</div>';
   html+='<div class="detailsource">来源：'+esc(d.source)+' · 核验日期 '+esc(d.checked_date)+'<br>'+esc(d.verification)+(d.recommended_pages?'<br>'+esc(d.recommended_pages):'')+'<br>许可与署名：'+esc(d.license_note)+'<br>证据记录：'+esc(d.evidence)+'<div class="detaillinks">'+link(d.source_href,d.page?'原 PDF · 第 '+d.page+' 页':'官方来源')+'</div></div>';
   openModal(html);currentDetailId=d.id;
-  $('#prevDetail').onclick=()=>stepDetail(-1);$('#nextDetail').onclick=()=>stepDetail(1);
+  $('#prevDetail').onclick=()=>stepDetail(-1);$('#nextDetail').onclick=()=>stepDetail(1);activateImages($('#modal'));
   $('#dialogContent').querySelectorAll('[data-related]').forEach(b=>b.onclick=()=>openDetail(byId[b.dataset.related],alts));
 }
 function stepDetail(delta){const i=detailItems.findIndex(x=>x.id===currentDetailId);if(detailItems[i+delta])openDetail(detailItems[i+delta],detailItems)}
-function openCompare(items,tour=null){
+async function openCompare(items,tour=null){
+  const token=++detailGeneration;currentDetailId=null;openModal('<h2 id="dialogtitle">并排对照</h2><div class="detail-loading">正在载入选中图例的分析…</div>');
+  try{const full=await Promise.all(items.map(loadDetail));if(token!==detailGeneration||!$('#modal').classList.contains('open'))return;renderCompare(full,tour)}catch(e){if(token!==detailGeneration)return;$('#dialogContent').querySelector('.detail-loading')?.remove();$('#dialogContent').insertAdjacentHTML('beforeend','<div class="aside-note">'+esc(e.message)+' <button class="secondary" id="retryCompare">重试</button></div>');$('#retryCompare').onclick=()=>openCompare(items,tour)}
+}
+function renderCompare(items,tour=null){
   openModal('<h2 id="dialogtitle">'+esc(tour?tour.title:'并排比较：关系、骨架与取舍')+'</h2><p class="subnote">'+esc(tour?tour.lesson:'先比较主阅读线和关系，再看颜色与形状。')+'</p><div class="compare-grid">'+items.map(d=>{
     const prompt=tour&&tour.cards.find(c=>c.id===d.id);
     return '<div class="compare-item"><div class="cardmeta">'+d.id+' · '+esc(d.role_label)+'</div><h3>'+esc(prompt?prompt.angle:d.title)+'</h3>'+imageHTML(d)+tagsHTML(d)+'<dl><dt>这张图强调什么</dt><dd>'+esc(prompt?prompt.reason:d.relation)+'</dd><dt>骨架组合</dt><dd>'+esc(d.recipe)+'</dd><dt>分类依据</dt><dd>'+esc(d.classification_note)+'</dd><dt>迁移时的边界</dt><dd>'+esc(d.caveat)+'</dd></dl><div class="detaillinks">'+(d.preview?link(d.preview,'放大原图'):link(d.source_href,'查看原始来源'))+d.assets.map(a=>link(a.href,a.label)).join('')+'</div></div>'
-  }).join('')+'</div>'+(tour?'<div class="aside-note">'+esc(tour.boundary)+'</div>':''));
+  }).join('')+'</div>'+(tour?'<div class="aside-note">'+esc(tour.boundary)+'</div>':''));activateImages($('#modal'));
 }
 function applyHash(){
-  const q=new URLSearchParams(location.hash.slice(1));
+  const q=new URLSearchParams(location.hash.slice(1));if($('#modal').classList.contains('open'))closeModal();
   if(q.has('tour')&&TOURS.some(t=>t.id===q.get('tour'))){view='tours';tourId=q.get('tour')}
   if(q.has('task')&&names.tasks[q.get('task')]){filters.task=q.get('task');filters.role='all';view='browse'}
   if(q.has('layout')&&names.layouts[q.get('layout')]){filters.layout=q.get('layout');filters.role='all';view='browse'}
@@ -140,14 +200,14 @@ document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{filters.mode=
 $('#showPacks').onclick=()=>{filters={...DEFAULT_FILTERS,role:'pack'};view='browse';syncControls();render()};
 $('#reset').onclick=reset;$('#emptyReset').onclick=reset;$('#closeModal').onclick=closeModal;
 $('#modal').onclick=e=>{if(e.target===$('#modal'))closeModal()};
-$('#compareBtn').onclick=()=>openCompare([...selected].map(id=>byId[id]));$('#clearCompare').onclick=()=>{selected.clear();render()};
+$('#compareBtn').onclick=()=>openCompare([...selected].map(id=>byId[id]));$('#clearCompare').onclick=()=>{selected.clear();$('#grid').querySelectorAll('[data-compare]').forEach(c=>c.checked=false);updateCompare()};
 document.addEventListener('keydown',e=>{
   if(!$('#modal').classList.contains('open'))return;
   if(e.key==='Escape'){closeModal();return}
   if(currentDetailId&&['ArrowLeft','ArrowRight'].includes(e.key)&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();stepDetail(e.key==='ArrowLeft'?-1:1)}
   if(e.key==='Tab'){const f=[...$('#modal').querySelectorAll('button,a,input,select')].filter(x=>!x.disabled);if(e.shiftKey&&document.activeElement===f[0]){e.preventDefault();f.at(-1).focus()}else if(!e.shiftKey&&document.activeElement===f.at(-1)){e.preventDefault();f[0].focus()}}
 });
-$('#exportFav').onclick=()=>{const a=DATA.filter(x=>favorites.has(x.id));if(!a.length){toast('先收藏几项，再导出清单');return}const blob=new Blob([JSON.stringify(a.map(({id,title,url,task_labels,layout_labels,recipe,caveat,local_asset})=>({id,title,url,task_labels,layout_labels,recipe,caveat,local_asset})),null,2)],{type:'application/json'});const u=URL.createObjectURL(blob),el=document.createElement('a');el.href=u;el.download='我的构图收藏.json';el.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
+$('#exportFav').onclick=async()=>{const chosen=DATA.filter(x=>favorites.has(x.id));if(!chosen.length){toast('先收藏几项，再导出清单');return}try{const a=await Promise.all(chosen.map(loadDetail));const blob=new Blob([JSON.stringify(a.map(({id,title,url,task_labels,layout_labels,recipe,caveat,local_asset})=>({id,title,url,task_labels,layout_labels,recipe,caveat,local_asset})),null,2)],{type:'application/json'});const u=URL.createObjectURL(blob),el=document.createElement('a');el.href=u;el.download='我的构图收藏.json';el.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}catch(e){toast('导出未完成：'+e.message)}};
 $('#stats').innerHTML=[[DATA.length,'项已重审素材'],[TAX.tasks.length,'类表达关系'],[TAX.layouts.length,'种空间骨架']].map(([n,t])=>'<div class="stat"><b>'+n+'</b><span>'+t+'</span></div>').join('');
 $('#reviewSummary').textContent='本次覆盖 '+TAX.reviewed_count+' 项；其中 '+TAX.limited_count+' 项按有限样例归类。另纠正 '+TAX.corrections.length+' 处已确认的原说明问题，具体记录可追溯。';
 $('#footnote').innerHTML='共 '+LIB.ppt_count+' 份 PowerPoint、'+LIB.visio_count+' 份 Visio；原文件的范围与许可见每项详情。公开预览不等于可编辑模板。<br>'+link('分类地图.html','完整分类地图')+link('静态总览.html','静态总览')+link('分类下载索引.html','本地文件索引')+link('使用说明.txt','使用说明')+link('素材目录.json','结构化目录');
