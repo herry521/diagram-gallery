@@ -157,4 +157,9 @@ window.addEventListener('hashchange',applyHash);applyHash();$('#loadingNotice').
 const studied=DATA.filter(x=>x.role!=='pack');const under=TAX.tasks.map(t=>({label:t.label,n:studied.filter(x=>x.tasks[0]===t.id).length})).sort((a,b)=>a.n-b.n).slice(0,3);
 $('#reviewSummary').insertAdjacentHTML('beforeend','<p><b>覆盖仍有偏向：</b>体系支撑、层级和映射较多；按主关系统计，'+under.map(x=>esc(x.label)+' '+x.n+' 项').join('、')+'相对较少（不含套装）。有类别入口不等于该类已充分覆盖。本轮已补入时序片段、带极性的反馈、存量流量和多维数量编码；仍值得增加更多中文真实业务的完整案例。</p>');
 
-if(LIB.public_site){$('#footnote').insertAdjacentHTML('afterbegin','<p><b>公开学习版：</b>本站随站保存 '+LIB.published_item_count+' 项素材的原图及许可允许的文件；其余条目只列来源与构图分析。'+link('素材署名与许可.html','逐项署名和分发范围')+'</p>');}
+if(LIB.public_site){
+  $('#footnote').innerHTML='<p><b>公开学习版：</b>本站随站保存 '+LIB.published_item_count+' 项素材的原图及许可允许的文件；其余条目只列来源与构图分析。'+link('素材署名与许可.html','逐项署名和分发范围')+'</p><p>完整个人素材含 '+LIB.archive_ppt_count+' 份 PowerPoint、'+LIB.archive_visio_count+' 份 Visio，以及引用的图片与 PDF，均存放在 '+link(LIB.archive_repository,'私有素材仓库（登录 GitHub）')+'。克隆该仓库后打开 index.html 可离线浏览全部素材。</p>'+link('分类地图.html','完整分类地图')+link('静态总览.html','静态总览')+link('分类下载索引.html','随站文件索引')+link('使用说明.txt','使用说明')+link('素材目录.json','结构化目录');
+  document.querySelector('.intro').innerHTML='从表达关系与空间骨架学习构图。本站展示 '+LIB.published_item_count+' 组授权原图；完整 PPT、PDF 和图片可从 '+link(LIB.archive_repository,'私有素材仓库（登录 GitHub）')+' 获取。切换“全部来源”可检索全部 '+DATA.length+' 项。';
+  document.querySelector('label[for="access"]').textContent='随站文件';
+  document.querySelector('#access option[value="saved"]').textContent='本站有原文件';
+}
