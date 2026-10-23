@@ -115,6 +115,9 @@ input[type=search]:focus, select:focus { border-color: #7aabd7; }
 .tag { background: #edf5fd; border: 1px solid #dce9f6; color: #396b99; border-radius: 4px; padding: 1px 6px; font-size: 10px; line-height: 1.7; }
 .tag.layout { background: #f2f6f8; border-color: #e2eaf0; color: #657b90; }
 .local-open { font-size: 11px; margin-top: 11px; overflow-wrap: anywhere; }
+.source-origin { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 8px; margin: 11px 0 3px; font-size: 11px; line-height: 1.7; min-width: 0; }
+.source-link { color: var(--blue); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; flex-shrink: 0; }
+.source-origin > span { color: #74869a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .cardfoot { display: flex; align-items: center; justify-content: space-between; gap: 6px; border-top: 1px solid #edf1f6; padding: 9px 12px; font-size: 11px; background: #fff; }
 .access { color: #708398; max-width: 60%; overflow-wrap: anywhere; }
 .actions { display: flex; align-items: center; gap: 8px; }

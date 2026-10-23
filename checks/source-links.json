@@ -1,0 +1,14 @@
+{
+  "items_with_source_entry": 313,
+  "kinds": {
+    "web": 287,
+    "provided_pdf": 20,
+    "provided_image": 6
+  },
+  "compact_index_includes_sources": true,
+  "external_source_urls_unchanged": 287,
+  "provided_pdf_page_anchors": 20,
+  "unknown_origins_explicit": 6,
+  "static_overview_source_links_complete": true,
+  "scope": "链接格式、目录与静态入口核验；未声称逐一访问全部外站。"
+}
